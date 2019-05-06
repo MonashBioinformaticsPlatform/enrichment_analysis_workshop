@@ -1,7 +1,7 @@
 ---
 title: "Basics"
 date: 2019-05-03T14:54:53+10:00
-draft: true
+#draft: true
 ---
 ## Pathway enrichment analysis workshop
 
