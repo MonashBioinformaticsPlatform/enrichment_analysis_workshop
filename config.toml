@@ -1,9 +1,9 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Functional Analysis"
-# theme = "hugo-whisper-theme"
-# theme = "ananke"
 theme ="hyde-hyde"
+publishDir = "docs"
+
 
 [params]
     # author = "Author"
