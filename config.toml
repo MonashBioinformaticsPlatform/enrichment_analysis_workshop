@@ -1,0 +1,49 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Functional Analysis"
+# theme = "hugo-whisper-theme"
+# theme = "ananke"
+theme ="hyde-hyde"
+
+[params]
+    # author = "Author"
+    title = "Enrichment Analysis"
+    # description = "Workshop for functional analysis of omics data"
+    authorimage = "/img/mbp_logo.png"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    # copyright = "htr3n"
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = false
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+
+    # Table of contents
+toc = "hugo" # none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "MonashBioinformaticsPlatform"
+    twitter = "MonashBioinfo"
+
+## Main Menu
+[[menu.main]]
+    name = "Basics"
+    weight = 100
+    identifier = "basics"
+    url = "/module/basics"
+##[[menu.main]]
+  ##  name = "Portfolio"
+   ## identifier = "portfolio"
+   ## weight = 200
+   ## url = "/portfolio/"
+##[[menu.main]]
+  ##  name = "About"
+  ##  identifier = "about"
+  ##  weight = 300
+  ##  url = "/about/"
+
