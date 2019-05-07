@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Functional Analysis</title>
+    <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/</link>
+    <description>Recent content on Functional Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 May 2019 14:54:53 +1000</lastBuildDate>
+    
+	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basics</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</link>
+      <pubDate>Fri, 03 May 2019 14:54:53 +1000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</guid>
+      <description>Pathway enrichment analysis workshop Overview of enrichment methods  Types  Gene list based Rank Based Network based  Hypogeometric distribution and Fisher&amp;rsquo;s exact test  Over/under representation? Background list Select organism Difference between database and tool and both  What is GO? A tree. Other stats considerations:
+ Multiple hypothesis correction Importance of background, what is it. Effect of gene list size? What size do you need?  The -log pval plot.</description>
+    </item>
+    
+  </channel>
+</rss>
