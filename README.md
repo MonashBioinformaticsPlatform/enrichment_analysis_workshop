@@ -22,7 +22,7 @@ To update the site:
 * Check that the site builds and looks correct by locally running `hugo server`.
 * `git commit` your changes and `git push`.
 
-Deployment to the live site at [monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop) happens automatically
+Deployment to the live site at [monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop) happens after running `./deploy.sh` script
 
 # Detail
 
