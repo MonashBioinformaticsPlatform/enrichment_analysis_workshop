@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.57.2" />
+
+    
+    
+    
+
+<title>Example Data Preparation • Functional Analysis</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Example Data Preparation"/>
+<meta name="twitter:description" content="SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
+This document describes a simple reanalysis of their raw data, to produce the results browseable through degust here"/>
+
+<meta property="og:title" content="Example Data Preparation" />
+<meta property="og:description" content="SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
+This document describes a simple reanalysis of their raw data, to produce the results browseable through degust here" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/example-data-preparation/" />
+<meta property="article:published_time" content="2019-08-29T12:17:28+10:00" />
+<meta property="article:modified_time" content="2019-08-29T12:17:28+10:00" /><meta property="og:site_name" content="Enrichment Analysis" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/enrichment_analysis_workshop/scss/hyde-hyde.6a83d62c39a364f036df4db1ecd564645635d6c7fc182425cb501218fec485f5.css" integrity="sha256-aoPWLDmjZPA2302x7NVkZFY11sf8GCQly1ASGP7EhfU=">
+
+
+<link rel="stylesheet" href="/enrichment_analysis_workshop/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/enrichment_analysis_workshop/scss/hugo-toc.8549a64d301421b4256ea9a0d5ca8b99178799f569d5d2daeb95f24cef3ce6b7.css" integrity="sha256-hUmmTTAUIbQlbqmg1cqLmReHmfVp1dLa65XyTO885rc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/">Functional Analysis</a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/mbp_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Functional Analysis</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/enrichment_analysis_workshop/module/basics">
+						<span>Basics</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/enrichment_analysis_workshop/module/example-data-preparation">
+						<span>Supplementary: Example Data</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/MonashBioinfo" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/MonashBioinformaticsPlatform" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Example Data Preparation</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Aug 29, 2019
+    
+    
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  
+    <div class="toc-wrapper">
+      <input type="checkbox" id="tocToggle">
+      <label for="tocToggle">Table of Content</label>
+      
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#sequence-data-download">Sequence data download</a></li>
+<li><a href="#reference-data-download">Reference data download</a></li>
+<li><a href="#align-and-count">Align and count</a></li>
+<li><a href="#differential-expression">Differential expression</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</nav>
+      
+    </div>
+  
+  
+  <div class="post">
+    
+
+<p>SH-SY5Y is a widely-used neuroblastoma cell line.
+With approriate treatment, they can be readily differentiated from their base state
+into a more neuronal phenotype.</p>
+
+<p>In their paper <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y"><em>Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells</em></a>
+Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).</p>
+
+<hr />
+
+<p>This document describes a simple reanalysis of their raw data, to produce the
+results browseable through degust <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">here</a></p>
+
+<h1 id="methods">Methods</h1>
+
+<h2 id="sequence-data-download">Sequence data download</h2>
+
+<p>Data is available in SRA with accession <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77383">GSE77383</a>.</p>
+
+<pre><code class="language-sh"># With SRA toolkit 2.8.0
+# module load sratoolkit/2.8.0
+mkdir fastq
+cd fastq
+fastq-dump -I --split-files -A SRR3133925_nodiff_rep1 --gzip SRR3133925
+fastq-dump -I --split-files -A SRR3133926_nodiff_rep2 --gzip SRR3133926
+fastq-dump -I --split-files -A SRR3133927_nodiff_rep3 --gzip SRR3133927
+fastq-dump -I --split-files -A SRR3133928_diff_rep1 --gzip SRR3133928
+fastq-dump -I --split-files -A SRR3133929_diff_rep2 --gzip SRR3133929
+fastq-dump -I --split-files -A SRR3133930_diff_rep3 --gzip SRR3133930
+</code></pre>
+
+<h2 id="reference-data-download">Reference data download</h2>
+
+<p>Also downloaded reference genome and genes gtf from <a href="http://www.ensembl.org/info/data/ftp/index.html">ensembl</a>
+(GRCh38, ensembl release 96).</p>
+
+<pre><code class="language-sh">mkdir ref_data
+cd ref_data
+wget ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.gtf.gz
+wget ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
+gunzip Homo_sapiens.GRCh38.96.gtf.gz
+</code></pre>
+
+<h2 id="align-and-count">Align and count</h2>
+
+<p>Using <a href="https://monashbioinformaticsplatform.github.io/RNAsik-pipe/">RNAsik</a> (Tsyganov et al. 2018)
+pipeline to run QC, alignment and gene counting on these fastqs.</p>
+
+<p>This runs <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastQC</a>,
+<a href="https://multiqc.info/">multiQC</a> (Ewels et al. 2016), <a href="https://broadinstitute.github.io/picard/">picard</a>, STAR alignment (Dobin et al. 2013) and featureCounts (Liao et al. 2014).</p>
+
+<pre><code class="language-sh"># Using RNAsik version 1.5.0
+RNAsik -fqDir fastqs -counts -paired -qc -multiqc -align star -fastaRef ref_data/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz -gtfFile ref_data/Homo_sapiens.GRCh38.96.gtf -pairIds _1,_2
+</code></pre>
+
+<h2 id="differential-expression">Differential expression</h2>
+
+<p>The counts table was uploaded to <a href="http://degust.erc.monash.edu/">Degust</a> for
+processing.
+Genes with at least 10 reads in at least one sample were included,
+and limma/voom used for differential expression
+analysis (Ritchie et al. 2015, Law et al. 2014).</p>
+
+<p>Dataset results acccessible :  <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
+
+<h1 id="references">References</h1>
+
+<p>Dobin, Alexander, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, and Thomas R. Gingeras. 2013. “STAR: Ultrafast universal RNA-seq aligner.” Bioinformatics 29 (1): 15–21. <a href="https://doi.org/10.1093/bioinformatics/bts635">https://doi.org/10.1093/bioinformatics/bts635</a>.</p>
+
+<p>Ewels, Philip, Måns Magnusson, Sverker Lundin, and Max Käller. 2016. “MultiQC: Summarize analysis results for multiple tools and samples in a single report.” Bioinformatics 32 (19): 3047–8. <a href="https://doi.org/10.1093/bioinformatics/btw354">https://doi.org/10.1093/bioinformatics/btw354</a>.</p>
+
+<p>Law, Charity W, Yunshun Chen, Wei Shi, and Gordon K Smyth. 2014. “voom: Precision weights unlock linear model analysis tools for RNA-seq read counts.” Genome Biology 15 (2): R29. <a href="https://doi.org/10.1186/gb-2014-15-2-r29">https://doi.org/10.1186/gb-2014-15-2-r29</a>.</p>
+
+<p>Liao, Yang, Gordon K. Smyth, and Wei Shi. 2014. “FeatureCounts: An efficient general purpose program for assigning sequence reads to genomic features.” Bioinformatics 30 (7): 923–30. <a href="https://doi.org/10.1093/bioinformatics/btt656">https://doi.org/10.1093/bioinformatics/btt656</a>.</p>
+
+<p>Pezzini, Francesco, Laura Bettinetti, Francesca Di Leva, Marzia Bianchi, Elisa Zoratti, Rosalba Carrozzo, Filippo M. Santorelli, Massimo Delledonne, Maciej Lalowski, and Alessandro Simonati. 2017. “Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells.” Cellular and Molecular Neurobiology 37 (4). Springer US: 665–82. <a href="https://doi.org/10.1007/s10571-016-0403-y">https://doi.org/10.1007/s10571-016-0403-y</a>.</p>
+
+<p>Ritchie, Matthew E., Belinda Phipson, Di Wu, Yifang Hu, Charity W. Law, Wei Shi, and Gordon K. Smyth. 2015. “limma powers differential expression analyses for RNA-sequencing and microarray studies.” Nucleic Acids Research 43 (7): e47. <a href="https://doi.org/10.1093/nar/gkv007">https://doi.org/10.1093/nar/gkv007</a>.</p>
+
+<p>Tsyganov, Kirill, Andrew James Perry, Stuart Kenneth Archer, and David Powell. 2018. “RNAsik: A Pipeline for complete and reproducible RNA-seq analysis that runs anywhere with speed and ease.” Journal of Open Source Software 3 (28): 583. <a href="https://doi.org/10.21105/joss.00583">https://doi.org/10.21105/joss.00583</a>.</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/enrichment_analysis_workshop/module/basics/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Basics</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

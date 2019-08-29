@@ -35,6 +35,13 @@ toc = "hugo" # none, "hugo", or "tocbot"
     weight = 100
     identifier = "basics"
     url = "/module/basics"
+
+[[menu.main]]
+    name = "Supplementary: Example Data"
+    weight = 100
+    identifier = "example-data-preparation"
+    url = "/module/example-data-preparation"
+
 ##[[menu.main]]
   ##  name = "Portfolio"
    ## identifier = "portfolio"
