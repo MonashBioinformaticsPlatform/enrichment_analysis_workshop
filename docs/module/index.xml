@@ -6,10 +6,21 @@
     <description>Recent content in Modules on Functional Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 14:54:53 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 12:17:28 +1000</lastBuildDate>
     
 	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Example Data Preparation</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/example-data-preparation/</link>
+      <pubDate>Thu, 29 Aug 2019 12:17:28 +1000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/example-data-preparation/</guid>
+      <description>SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
+This document describes a simple reanalysis of their raw data, to produce the results browseable through degust here</description>
+    </item>
     
     <item>
       <title>Basics</title>
