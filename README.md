@@ -18,7 +18,7 @@ hugo server
 
 To update the site:
 
-* Edit the Markdown in `content` (and possibly files in `static` or `config.toml`)
+* Create or edit the Markdown in `content` (and possibly files in `static (for images)` or `config.toml`)
 * Check that the site builds and looks correct by locally running `hugo server`.
 * `git commit` your changes and `git push`.
 
