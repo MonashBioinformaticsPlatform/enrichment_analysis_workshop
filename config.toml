@@ -31,19 +31,19 @@ toc = "hugo" # none, "hugo", or "tocbot"
 
 ## Main Menu
 [[menu.main]]
-    name = "Overveiw"
+    name = "01 Overview"
     weight = 100
     identifier = "overview"
     url = "module/overview"
 
 [[menu.main]]
-    name = "Basics"
+    name = "02 Basics"
     weight = 100
     identifier = "basics"
     url = "/module/basics"
 
 [[menu.main]]
-    name = "Supplementary: Example Data"
+    name = "03 Supplementary: Example Data"
     weight = 100
     identifier = "example-data-preparation"
     url = "/module/example-data-preparation"
