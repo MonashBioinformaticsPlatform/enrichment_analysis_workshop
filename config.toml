@@ -31,6 +31,12 @@ toc = "hugo" # none, "hugo", or "tocbot"
 
 ## Main Menu
 [[menu.main]]
+    name = "Overveiw"
+    weight = 100
+    identifier = "overview"
+    url = "module/overview"
+
+[[menu.main]]
     name = "Basics"
     weight = 100
     identifier = "basics"
