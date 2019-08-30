@@ -1,9 +1,10 @@
 ---
 title: "Basics"
-date: 2019-05-03T14:54:53+10:00
+date: 2019-08-30
 #draft: true
 ---
-## Pathway enrichment analysis workshop
+## Functional analysis of -Omics data
+
 
 ### Overview of enrichment methods
 - Types
