@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "print.css",
-	"sourceRoot": "/Users/swil0005/projects/Training_FunctionalAnalysis/enrichment_analysis_workshop",
+	"sourceRoot": "/Users/asha0035/enrichment_analysis_workshop",
 	"sources": [
 		"themes/hyde-hyde/assets/scss/print.scss",
 		"themes/hyde-hyde/assets/scss/hyde-hyde/_variables.scss",

@@ -6,10 +6,30 @@
     <description>Recent content on Functional Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2019 12:17:28 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Basics</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</guid>
+      <description>Functional analysis of -Omics data Overview of enrichment methods  Types  Gene list based Rank Based Network based  Hypogeometric distribution and Fisher&amp;rsquo;s exact test  Over/under representation? Background list Select organism Difference between database and tool and both  What is GO? A tree. Other stats considerations:
+ Multiple hypothesis correction Importance of background, what is it. Effect of gene list size? What size do you need?  The -log pval plot.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/overview/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/overview/</guid>
+      <description>Functional analysis of -Omics data General information The workshop covers the bioinformatics concepts and tools available for interpreting a gene list using gene ontology and pathway information. The workshop focuses on the principles and concepts required for analyzing and conducting functiona and pathway analysis on a gene list from any organism, although focus will be on human and model eukaryotic organisms.
+Course Objectives Participants will gain practical experience and skills to be able to:</description>
+    </item>
     
     <item>
       <title>Example Data Preparation</title>
@@ -20,16 +40,6 @@
       <description>SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
 In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
 This document describes a simple reanalysis of their raw data, to produce the results browseable through degust here</description>
-    </item>
-    
-    <item>
-      <title>Basics</title>
-      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</link>
-      <pubDate>Fri, 03 May 2019 14:54:53 +1000</pubDate>
-      
-      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</guid>
-      <description>Pathway enrichment analysis workshop Overview of enrichment methods  Types  Gene list based Rank Based Network based  Hypogeometric distribution and Fisher&amp;rsquo;s exact test  Over/under representation? Background list Select organism Difference between database and tool and both  What is GO? A tree. Other stats considerations:
- Multiple hypothesis correction Importance of background, what is it. Effect of gene list size? What size do you need?  The -log pval plot.</description>
     </item>
     
   </channel>
