@@ -17,20 +17,23 @@
     
     
 
-<title> • Functional Analysis</title>
+<title>Activities • Functional Analysis</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Activities - TO MERGE INTO WORKFLOW Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+<meta name="twitter:title" content="Activities"/>
+<meta name="twitter:description" content="Activities This is to be merged into sections by topic.
+Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
 In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Activities - TO MERGE INTO WORKFLOW Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+<meta property="og:title" content="Activities" />
+<meta property="og:description" content="Activities This is to be merged into sections by topic.
+Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
 In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/activities/" />
-<meta property="og:site_name" content="Enrichment Analysis" />
+<meta property="article:published_time" content="2019-09-30T16:30:37+10:00" />
+<meta property="article:modified_time" content="2019-09-30T16:30:37+10:00" /><meta property="og:site_name" content="Enrichment Analysis" />
 
 
     
@@ -162,11 +165,13 @@ In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events 
     
 <article>
   <header>
-    <h1></h1>
+    <h1>Activities</h1>
     
     
 <div class="post__meta">
     
+    
+      <i class="fas fa-calendar-alt"></i> Sep 30, 2019
     
     
     
@@ -187,7 +192,7 @@ In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events 
       
           <nav id="TableOfContents">
 <ul>
-<li><a href="#activities-to-merge-into-workflow">Activities  - TO MERGE INTO WORKFLOW</a>
+<li><a href="#activities">Activities</a>
 <ul>
 <li><a href="#activity-getting-a-list-of-de-genes">Activity - Getting a list of DE genes</a></li>
 <li><a href="#enrichment-stats-interactively">Enrichment stats interactively</a></li>
@@ -206,7 +211,9 @@ In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events 
   <div class="post">
     
 
-<h1 id="activities-to-merge-into-workflow">Activities  - TO MERGE INTO WORKFLOW</h1>
+<h1 id="activities">Activities</h1>
+
+<p>This is to be merged into sections by topic.</p>
 
 <h2 id="activity-getting-a-list-of-de-genes">Activity - Getting a list of DE genes</h2>
 
@@ -221,42 +228,24 @@ Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and
 <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
 
 <ol>
-<li>Download the full table of data from degust.  Import into excel.</li>
-</ol>
+<li><p>Download the full table of data from degust.  Import into excel. <!-- File>Import --></p></li>
 
-<!-- File>Import -->
-
-<ol>
 <li><p>QUESTION: How many genes are differentially expressed?</p>
 
 <ul>
-<li>Significant at 0.01? (FDR Column = Corrected P-value)</li>
-
-<li><p>And because there are so many in this experiment (its a massive change to cells) -  At 2-fold up/down regulated?
-NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</p></li>
-
-<li><p>And (just for this exercise!) -  take significance at p&lt;1x10^-7  , with 2x fold change? This is a ridiculous threhsold - typically you would only filtere at p&lt;0.01 (and occasionally 2fold change) but the difference between the two cell conditions is pretty extreme! This threshold gives a more normal number of de genes for downstream analysis.</p></li>
+<li>Significant at 0.01? (FDR Column = Corrected P-value)   <strong>6391 ( this is massive )</strong></li>
+<li>And because there are so many in this experiment (its a massive change to cells) -  At 2-fold up/down regulated? <strong>2412 (still very large!)</strong><br /></li>
+<li>And (Just for this exercise!) -  take significance at p&lt;1x10^-7, with 2x fold change? This is a ridiculous threhsold - typically you would only filtere at p&lt;0.01 (and occasionally 2fold change) but the difference between the two cell conditions is pretty extreme! This threshold gives a more normal number of differentially expressed genes for downstream analysis. <strong>168</strong>
+NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</li>
 </ul></li>
-</ol>
 
-<p>ANSWER:
-    - 6391 ( this is massive )
-    - 2412 (still very large!)
-    - 168  (a more typical result, by using a stupid threshold)</p>
-
-<ol>
-<li>QUESTION: How many genes are <em>tested</em>? This is your background.
+<li><p>QUESTION: How many genes are <em>tested</em>? This is your background.</p>
 
 <ul>
-<li>But with ~20k human genes - why are there genes missing?
-<br /></li>
+<li>But with ~20k human genes - why are there genes missing? <strong>14420</strong></li>
 </ul></li>
-</ol>
 
-<p>ANSWER: 14420</p>
-
-<ol>
-<li>COMMON GOTCHA: Can you find SEPT4?
+<li><p>COMMON GOTCHA: Can you find SEPT4?</p>
 
 <ul>
 <li>Because <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7"><em>Gene name errors are widespread in the scientific literature</em></a></li>
@@ -352,11 +341,11 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
 
 <div class="navigation navigation-single">
     
-    
-    <a href="/enrichment_analysis_workshop/module/example-data-preparation/" class="navigation-next">
-      <span class="navigation-tittle">Example Data Preparation</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    <a href="/enrichment_analysis_workshop/module/basics/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Basics</span>
     </a>
+    
     
 </div>
 
