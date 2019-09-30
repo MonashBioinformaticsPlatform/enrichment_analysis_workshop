@@ -42,5 +42,15 @@ In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events 
 This document describes a simple reanalysis of their raw data, to produce the results browseable through degust here</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/activities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/activities/</guid>
+      <description>Activities - TO MERGE INTO WORKFLOW Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>
+    </item>
+    
   </channel>
 </rss>

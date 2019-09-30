@@ -10,13 +10,11 @@
   <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/</loc>
     <lastmod>2019-08-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/</loc>
     <lastmod>2019-08-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -30,13 +28,16 @@
   </url>
   
   <url>
-    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/categories/</loc>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/activities/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/categories/</loc>
+  </url>
+  
+  <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
