@@ -4,7 +4,6 @@ date: 2019-09-30T16:30:37+10:00
 draft: false
 ---
 
-# Activities
 
 This is to be merged into sections by topic.
 

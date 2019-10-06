@@ -1,7 +1,8 @@
 baseURL = "https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/"
 languageCode = "en-us"
 title = "Functional Analysis"
-theme ="hyde-hyde"
+# theme ="hyde-hyde"
+theme ="hugo-theme-learn"
 publishDir = "docs"
 
 [params]
