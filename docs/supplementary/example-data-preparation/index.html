@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Module :: Functional Analysis</title>
+    <title>Example Data Preparation :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1570404706" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/module/">
+  <body class="" data-url="/enrichment_analysis_workshop/supplementary/example-data-preparation/">
     <nav id="sidebar" class="">
 
 
@@ -92,7 +92,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/supplementary/" title="Supplementary" class="dd-item 
-        
+        parent
         
         
         ">
@@ -135,7 +135,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/supplementary/example-data-preparation/" title="Example Data Preparation" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/supplementary/example-data-preparation/" title="Example Data Preparation" class="dd-item active">
         <a href="/enrichment_analysis_workshop/supplementary/example-data-preparation/">
         Example Data Preparation
         
@@ -162,8 +162,8 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/module/" title="Module" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/enrichment_analysis_workshop/module/">
@@ -277,6 +277,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -287,7 +289,13 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Content</a> > Module
+            
+            
+          
+          
+            <a href='/enrichment_analysis_workshop/'>Content</a> > <a href='/enrichment_analysis_workshop/supplementary/'>Supplementary</a> > Example Data Preparation
+          
+         
           
          
           
@@ -296,6 +304,24 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#sequence-data-download">Sequence data download</a></li>
+<li><a href="#reference-data-download">Reference data download</a></li>
+<li><a href="#align-and-count">Align and count</a></li>
+<li><a href="#differential-expression">Differential expression</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -303,9 +329,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Example Data Preparation
+            </h1>
           
 
         
@@ -313,18 +342,93 @@
 
 
 
-	<p>Content goes here.</p>
 
+<p>SH-SY5Y is a widely-used neuroblastoma cell line.
+With approriate treatment, they can be readily differentiated from their base state
+into a more neuronal phenotype.</p>
 
+<p>In their paper <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y"><em>Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells</em></a>
+Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).</p>
 
+<hr />
+
+<p>This document describes a simple reanalysis of their raw data, to produce the
+results browseable through degust <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">here</a></p>
+
+<h1 id="methods">Methods</h1>
+
+<h2 id="sequence-data-download">Sequence data download</h2>
+
+<p>Data is available in SRA with accession <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77383">GSE77383</a>.</p>
+
+<pre><code class="language-sh"># With SRA toolkit 2.8.0
+# module load sratoolkit/2.8.0
+mkdir fastq
+cd fastq
+fastq-dump -I --split-files -A SRR3133925_nodiff_rep1 --gzip SRR3133925
+fastq-dump -I --split-files -A SRR3133926_nodiff_rep2 --gzip SRR3133926
+fastq-dump -I --split-files -A SRR3133927_nodiff_rep3 --gzip SRR3133927
+fastq-dump -I --split-files -A SRR3133928_diff_rep1 --gzip SRR3133928
+fastq-dump -I --split-files -A SRR3133929_diff_rep2 --gzip SRR3133929
+fastq-dump -I --split-files -A SRR3133930_diff_rep3 --gzip SRR3133930
+</code></pre>
+
+<h2 id="reference-data-download">Reference data download</h2>
+
+<p>Also downloaded reference genome and genes gtf from <a href="http://www.ensembl.org/info/data/ftp/index.html">ensembl</a>
+(GRCh38, ensembl release 96).</p>
+
+<pre><code class="language-sh">mkdir ref_data
+cd ref_data
+wget ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.gtf.gz
+wget ftp://ftp.ensembl.org/pub/release-96/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
+gunzip Homo_sapiens.GRCh38.96.gtf.gz
+</code></pre>
+
+<h2 id="align-and-count">Align and count</h2>
+
+<p>Using <a href="https://monashbioinformaticsplatform.github.io/RNAsik-pipe/">RNAsik</a> (Tsyganov et al. 2018)
+pipeline to run QC, alignment and gene counting on these fastqs.</p>
+
+<p>This runs <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastQC</a>,
+<a href="https://multiqc.info/">multiQC</a> (Ewels et al. 2016), <a href="https://broadinstitute.github.io/picard/">picard</a>, STAR alignment (Dobin et al. 2013) and featureCounts (Liao et al. 2014).</p>
+
+<pre><code class="language-sh"># Using RNAsik version 1.5.0
+RNAsik -fqDir fastqs -counts -paired -qc -multiqc -align star -fastaRef ref_data/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz -gtfFile ref_data/Homo_sapiens.GRCh38.96.gtf -pairIds _1,_2
+</code></pre>
+
+<h2 id="differential-expression">Differential expression</h2>
+
+<p>The counts table was uploaded to <a href="http://degust.erc.monash.edu/">Degust</a> for
+processing.
+Genes with at least 10 reads in at least one sample were included,
+and limma/voom used for differential expression
+analysis (Ritchie et al. 2015, Law et al. 2014).</p>
+
+<p>Dataset results acccessible :  <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
+
+<h1 id="references">References</h1>
+
+<p>Dobin, Alexander, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, and Thomas R. Gingeras. 2013. “STAR: Ultrafast universal RNA-seq aligner.” Bioinformatics 29 (1): 15–21. <a href="https://doi.org/10.1093/bioinformatics/bts635">https://doi.org/10.1093/bioinformatics/bts635</a>.</p>
+
+<p>Ewels, Philip, Måns Magnusson, Sverker Lundin, and Max Käller. 2016. “MultiQC: Summarize analysis results for multiple tools and samples in a single report.” Bioinformatics 32 (19): 3047–8. <a href="https://doi.org/10.1093/bioinformatics/btw354">https://doi.org/10.1093/bioinformatics/btw354</a>.</p>
+
+<p>Law, Charity W, Yunshun Chen, Wei Shi, and Gordon K Smyth. 2014. “voom: Precision weights unlock linear model analysis tools for RNA-seq read counts.” Genome Biology 15 (2): R29. <a href="https://doi.org/10.1186/gb-2014-15-2-r29">https://doi.org/10.1186/gb-2014-15-2-r29</a>.</p>
+
+<p>Liao, Yang, Gordon K. Smyth, and Wei Shi. 2014. “FeatureCounts: An efficient general purpose program for assigning sequence reads to genomic features.” Bioinformatics 30 (7): 923–30. <a href="https://doi.org/10.1093/bioinformatics/btt656">https://doi.org/10.1093/bioinformatics/btt656</a>.</p>
+
+<p>Pezzini, Francesco, Laura Bettinetti, Francesca Di Leva, Marzia Bianchi, Elisa Zoratti, Rosalba Carrozzo, Filippo M. Santorelli, Massimo Delledonne, Maciej Lalowski, and Alessandro Simonati. 2017. “Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells.” Cellular and Molecular Neurobiology 37 (4). Springer US: 665–82. <a href="https://doi.org/10.1007/s10571-016-0403-y">https://doi.org/10.1007/s10571-016-0403-y</a>.</p>
+
+<p>Ritchie, Matthew E., Belinda Phipson, Di Wu, Yifang Hu, Charity W. Law, Wei Shi, and Gordon K. Smyth. 2015. “limma powers differential expression analyses for RNA-sequencing and microarray studies.” Nucleic Acids Research 43 (7): e47. <a href="https://doi.org/10.1093/nar/gkv007">https://doi.org/10.1093/nar/gkv007</a>.</p>
+
+<p>Tsyganov, Kirill, Andrew James Perry, Stuart Kenneth Archer, and David Powell. 2018. “RNAsik: A Pipeline for complete and reproducible RNA-seq analysis that runs anywhere with speed and ease.” Journal of Open Source Software 3 (28): 583. <a href="https://doi.org/10.21105/joss.00583">https://doi.org/10.21105/joss.00583</a>.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -356,8 +460,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -372,21 +474,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -399,6 +488,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -407,6 +513,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -420,9 +528,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -479,10 +584,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/enrichment_analysis_workshop/supplementary/example-data-preparation/" title="Example Data Preparation"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/supplementary/activities/" title="Activities"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/module/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/module/" title="Module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -512,3 +617,4 @@
 
   </body>
 </html>
+

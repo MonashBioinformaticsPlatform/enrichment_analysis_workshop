@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Module :: Functional Analysis</title>
+    <title>Example Analysis: SH-SY5Y Differentiation :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1570404706" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/module/">
+  <body class="" data-url="/enrichment_analysis_workshop/module/example-dataset/">
     <nav id="sidebar" class="">
 
 
@@ -163,7 +163,7 @@
     
     <li data-nav-id="/enrichment_analysis_workshop/module/" title="Module" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/enrichment_analysis_workshop/module/">
@@ -205,7 +205,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/module/example-dataset/" title="Example Analysis: SH-SY5Y Differentiation" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/module/example-dataset/" title="Example Analysis: SH-SY5Y Differentiation" class="dd-item active">
         <a href="/enrichment_analysis_workshop/module/example-dataset/">
         Example Analysis: SH-SY5Y Differentiation
         
@@ -277,6 +277,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -287,7 +289,13 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Content</a> > Module
+            
+            
+          
+          
+            <a href='/enrichment_analysis_workshop/'>Content</a> > <a href='/enrichment_analysis_workshop/module/'>Module</a> > Example Analysis: SH-SY5Y Differentiation
+          
+         
           
          
           
@@ -296,6 +304,22 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#sh-sy5y-differentiation">SH-SY5Y Differentiation</a></li>
+<li><a href="#the-question-what-pathways-are-involved-in-sh-sy5y-differentiation">The question: What pathways are involved in SH-SY5Y Differentiation?</a></li>
+<li><a href="#the-data-differentially-expressed-genes">The data : Differentially expressed genes</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -303,9 +327,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Example Analysis: SH-SY5Y Differentiation
+            </h1>
           
 
         
@@ -313,18 +340,42 @@
 
 
 
-	<p>Content goes here.</p>
 
+<h2 id="sh-sy5y-differentiation">SH-SY5Y Differentiation</h2>
 
+<p>SH-SY5Y is a commonly used neuroblastoma cell line.
+With appropriate treatment, it can be induced to differentiate into a ‘more neuronal’ form.
+Differentiated cells look quite different, growing thin neurites out from the body of the cell.</p>
 
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/shsy5ydiff.png" alt="shsy5" />
+<!-- seems to point to content dir not commo root : ![shsy5](/img/shsy5ydiff.png)--></p>
+
+<p><em>Image from Figure 4 (Pezzini et al. 2017)</em></p>
+
+<h2 id="the-question-what-pathways-are-involved-in-sh-sy5y-differentiation">The question: What pathways are involved in SH-SY5Y Differentiation?</h2>
+
+<p>In their paper <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y"><em>Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells</em></a>
+Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
+They then looked at functional enrichment of differentially expressed genes.</p>
+
+<h2 id="the-data-differentially-expressed-genes">The data : Differentially expressed genes</h2>
+
+<p>The example dataset for today is the differential expression results.</p>
+
+<p>They can be accessed via this link:
+<a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
+
+<p>This has been reanlysed from the published raw data, via the degust tool.</p>
+
+<p>NB: Other tools and approaches will have different looking results - but generally you will end up with a table of genes with some measure of statitical confidence.
+The methods for functional enrichment analysis should be similar.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -440,6 +491,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -456,6 +508,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -479,10 +534,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/enrichment_analysis_workshop/supplementary/example-data-preparation/" title="Example Data Preparation"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/module/basics/" title="Basics"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/module/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/module/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -512,3 +567,4 @@
 
   </body>
 </html>
+
