@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content on Functional Analysis</title>
+    <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/</link>
+    <description>Recent content in Content on Functional Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Analysis: SH-SY5Y Differentiation</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/example-dataset/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/example-dataset/</guid>
+      <description>SH-SY5Y Differentiation SH-SY5Y is a commonly used neuroblastoma cell line. With appropriate treatment, it can be induced to differentiate into a ‘more neuronal’ form. Differentiated cells look quite different, growing thin neurites out from the body of the cell.
+Image from Figure 4 (Pezzini et al. 2017)
+The question: What pathways are involved in SH-SY5Y Differentiation? In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>
+    </item>
+    
+  </channel>
+</rss>

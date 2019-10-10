@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/overview/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/example-dataset/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/</loc>
     <lastmod>2019-09-30T16:30:37+10:00</lastmod>
   </url>
@@ -13,33 +28,18 @@
   </url>
   
   <url>
-    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/</loc>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/example-data-preparation/</loc>
+    <lastmod>2019-08-29T12:17:28+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/basics/</loc>
     <lastmod>2019-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/activities/</loc>
     <lastmod>2019-09-30T16:30:37+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/basics/</loc>
-    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/example-dataset/</loc>
-    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/module/overview/</loc>
-    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/example-data-preparation/</loc>
-    <lastmod>2019-08-29T12:17:28+10:00</lastmod>
   </url>
   
   <url>

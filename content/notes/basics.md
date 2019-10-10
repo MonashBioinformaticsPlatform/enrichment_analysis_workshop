@@ -1,10 +1,12 @@
 ---
 title: "Basics"
 date: 2019-08-30
+weight: 20
 #draft: true
 ---
 ## Functional analysis of -Omics data
 
+Notes, to be removed
 
 ### Overview of enrichment methods
 - Types

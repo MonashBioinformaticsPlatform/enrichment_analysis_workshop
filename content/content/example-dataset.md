@@ -1,6 +1,7 @@
 ---
-title: "Example Analysis: SH-SY5Y Differentiation"
+title: "Example: SH-SY5Y Differentiation"
 date: 2019-08-30
+weight: 5
 ---
 
 ## SH-SY5Y Differentiation
@@ -16,6 +17,7 @@ Differentiated cells look quite different, growing thin neurites out from the bo
 _Image from Figure 4 (Pezzini et al. 2017)_
 
 
+
 ## The question: What pathways are involved in SH-SY5Y Differentiation?
 
 In their paper [_Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells_](https://link.springer.com/article/10.1007%2Fs10571-016-0403-y) 
@@ -25,7 +27,7 @@ They then looked at functional enrichment of differentially expressed genes.
 
 ## The data : Differentially expressed genes
 
-The example dataset for today is the differential expression results.  
+The example dataset for today is the RNAseq differential expression results.  
 
 They can be accessed via this link: 
 http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds

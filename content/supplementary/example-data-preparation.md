@@ -1,6 +1,7 @@
 ---
 title: "Example Data Preparation"
 date: 2019-08-29T12:17:28+10:00
+weight: 10
 #draft: False
 ---
 

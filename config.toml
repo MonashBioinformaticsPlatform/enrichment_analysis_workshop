@@ -1,62 +1,49 @@
 baseURL = "https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/"
 languageCode = "en-us"
 title = "Functional Analysis"
-# theme ="hyde-hyde"
 theme ="hugo-theme-learn"
 publishDir = "docs"
 
 [params]
     # author = "Author"
     title = "Enrichment Analysis"
-    # description = "Workshop for functional analysis of omics data"
-    authorimage = "/img/mbp_logo.png"
-    dateformat = "Jan 2, 2006"
 
-    # sidebar, copyright & license
-    # copyright = "htr3n"
-    license = "CC BY-SA 4.0"
-    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
-    showBuiltWith = false
 
-    # https://highlightjs.org
-    highlightjs = true
-    highlightjsstyle = "github"
+    ## Not used by learn theme?
+    ## description = "Workshop for functional analysis of omics data"
+    #authorimage = "/img/mbp_logo.png"
+    #dateformat = "Jan 2, 2006"
+    # 
+    ## sidebar, copyright & license
+    ## copyright = "htr3n"
+    #license = "CC BY-SA 4.0"
+    #licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    #showBuiltWith = false
+    #
+    ## https://highlightjs.org
+    ##highlightjs = true
+    ##highlightjsstyle = "github"
+    #
+    ## Table of contents
+    ##toc = "hugo" # none, "hugo", or "tocbot"
 
-    # Table of contents
-toc = "hugo" # none, "hugo", or "tocbot"
+
+
+    ## learn theme specific
+
+    # Shows a checkmark for visited pages on the menu
+    showVisitedLinks = false
+
+    # Disable search function. It will hide search bar
+    disableSearch = true
+
+    # Change default color scheme with a variant one. Can be "red", "blue", "green".
+    themeVariant = "green"
+
+
+
 
 ## Social Accounts
 [params.social]
     github = "MonashBioinformaticsPlatform"
     twitter = "MonashBioinfo"
-
-## Main Menu
-[[menu.main]]
-    name = "01 Overview"
-    weight = 100
-    identifier = "overview"
-    url = "module/overview"
-
-[[menu.main]]
-    name = "02 Basics"
-    weight = 100
-    identifier = "basics"
-    url = "/module/basics"
-
-[[menu.main]]
-    name = "03 Supplementary: Example Data"
-    weight = 100
-    identifier = "example-data-preparation"
-    url = "/module/example-data-preparation"
-
-##[[menu.main]]
-  ##  name = "Portfolio"
-   ## identifier = "portfolio"
-   ## weight = 200
-   ## url = "/portfolio/"
-##[[menu.main]]
-  ##  name = "About"
-  ##  identifier = "about"
-  ##  weight = 300
-  ##  url = "/about/"
-

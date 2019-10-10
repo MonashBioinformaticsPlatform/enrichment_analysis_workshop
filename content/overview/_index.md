@@ -1,7 +1,7 @@
 ---
-title: "Overview"
-date: 2019-08-30
-#draft: true
+title: Overview
+weight: 1
+chapter: true
 ---
 ## Functional analysis of -Omics data
 
@@ -41,3 +41,4 @@ Time	|	Programme
 
 ### Post-workshop survey
 We appreciate your feedback (both positive and negative !) - please fill this out in the last 5 mins of the workshop: 
+

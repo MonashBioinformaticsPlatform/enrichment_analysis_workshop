@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Activities :: Functional Analysis</title>
+    <title>Example Analysis: SH-SY5Y Differentiation :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1570599236" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/supplementary/activities/">
+  <body class="" data-url="/enrichment_analysis_workshop/content/example-dataset/">
     <nav id="sidebar" class="">
 
 
@@ -92,7 +92,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/content/" title="Content" class="dd-item 
-        
+        parent
         
         
         ">
@@ -116,7 +116,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/example-dataset/" title="Example Analysis: SH-SY5Y Differentiation" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/example-dataset/" title="Example Analysis: SH-SY5Y Differentiation" class="dd-item active">
         <a href="/enrichment_analysis_workshop/content/example-dataset/">
         Example Analysis: SH-SY5Y Differentiation
         
@@ -143,7 +143,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/supplementary/" title="Supplementary" class="dd-item 
-        parent
+        
         
         
         ">
@@ -205,7 +205,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/supplementary/activities/" title="Activities" class="dd-item active">
+      <li data-nav-id="/enrichment_analysis_workshop/supplementary/activities/" title="Activities" class="dd-item ">
         <a href="/enrichment_analysis_workshop/supplementary/activities/">
         Activities
         
@@ -274,7 +274,7 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > <a href='/enrichment_analysis_workshop/supplementary/'>Supplementary</a> > Activities
+            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > <a href='/enrichment_analysis_workshop/content/'>Content</a> > Example Analysis: SH-SY5Y Differentiation
           
          
           
@@ -291,13 +291,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#activity-getting-a-list-of-de-genes">Activity - Getting a list of DE genes</a></li>
-<li><a href="#enrichment-stats-interactively">Enrichment stats interactively</a></li>
-<li><a href="#enrichment-in-gprofiler">Enrichment in gProfiler?</a></li>
-<li><a href="#enrichment-in-david">Enrichment in DAVID</a></li>
-<li><a href="#explore-in-string">Explore in String?</a></li>
-<li><a href="#explore-in-reactome">Explore in Reactome?</a></li>
-<li><a href="#end-of-session-challenge-dr-dodge-s-experiment">End of session Challenge : Dr Dodge&rsquo;s Experiment</a></li>
+<li><a href="#sh-sy5y-differentiation">SH-SY5Y Differentiation</a></li>
+<li><a href="#the-question-what-pathways-are-involved-in-sh-sy5y-differentiation">The question: What pathways are involved in SH-SY5Y Differentiation?</a></li>
+<li><a href="#the-data-differentially-expressed-genes">The data : Differentially expressed genes</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -316,7 +312,7 @@
           
             <h1>
               
-              Activities
+              Example Analysis: SH-SY5Y Differentiation
             </h1>
           
 
@@ -326,128 +322,34 @@
 
 
 
-<p>This is to be merged into sections by topic.</p>
+<h2 id="sh-sy5y-differentiation">SH-SY5Y Differentiation</h2>
 
-<h2 id="activity-getting-a-list-of-de-genes">Activity - Getting a list of DE genes</h2>
+<p>SH-SY5Y is a commonly used neuroblastoma cell line.
+With appropriate treatment, it can be induced to differentiate into a ‘more neuronal’ form.
+Differentiated cells look quite different, growing thin neurites out from the body of the cell.</p>
 
-<p>SH-SY5Y is a widely-used neuroblastoma cell line.
-With approriate treatment, they can be readily differentiated from their base state
-into a more neuronal phenotype.</p>
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/shsy5ydiff.png" alt="shsy5" />
+<!-- seems to point to content dir not commo root : ![shsy5](/img/shsy5ydiff.png)--></p>
+
+<p><em>Image from Figure 4 (Pezzini et al. 2017)</em></p>
+
+<h2 id="the-question-what-pathways-are-involved-in-sh-sy5y-differentiation">The question: What pathways are involved in SH-SY5Y Differentiation?</h2>
 
 <p>In their paper <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y"><em>Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells</em></a>
-Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).</p>
+Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
+They then looked at functional enrichment of differentially expressed genes.</p>
 
-<p>Here are some differential expression results from their raw data:
+<h2 id="the-data-differentially-expressed-genes">The data : Differentially expressed genes</h2>
+
+<p>The example dataset for today is the differential expression results.</p>
+
+<p>They can be accessed via this link:
 <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
 
-<ol>
-<li><p>Download the full table of data from degust.  Import into excel. <!-- File>Import --></p></li>
+<p>This has been reanlysed from the published raw data, via the degust tool.</p>
 
-<li><p>QUESTION: How many genes are differentially expressed?</p>
-
-<ul>
-<li>Significant at 0.01? (FDR Column = Corrected P-value)   <strong>6391 ( this is massive )</strong></li>
-<li>And because there are so many in this experiment (its a massive change to cells) -  At 2-fold up/down regulated? <strong>2412 (still very large!)</strong><br /></li>
-<li>And (Just for this exercise!) -  take significance at p&lt;1x10^-7, with 2x fold change? This is a ridiculous threhsold - typically you would only filtere at p&lt;0.01 (and occasionally 2fold change) but the difference between the two cell conditions is pretty extreme! This threshold gives a more normal number of differentially expressed genes for downstream analysis. <strong>168</strong>
-NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</li>
-</ul></li>
-
-<li><p>QUESTION: How many genes are <em>tested</em>? This is your background.</p>
-
-<ul>
-<li>But with ~20k human genes - why are there genes missing? <strong>14420</strong></li>
-</ul></li>
-
-<li><p>COMMON GOTCHA: Can you find SEPT4?</p>
-
-<ul>
-<li>Because <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7"><em>Gene name errors are widespread in the scientific literature</em></a></li>
-<li>You can&rsquo;t fix it automatically (try converting it to text!). You have to avoid it by importing gene columns as &lsquo;text&rsquo; columns in excel. See video from HUGO : <a href="https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1">https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1</a></li>
-<li>NB: You can ignore these for this workshop, but you want this to be right for publication!</li>
-</ul></li>
-</ol>
-
-<h2 id="enrichment-stats-interactively">Enrichment stats interactively</h2>
-
-<p>Check out the toy enrichment calculater <a href="https://bioinformatics3.erc.monash.edu/rsconnect/connect/#/apps/40/access">here</a></p>
-
-<ol>
-<li><p>QUESTION: If 17 of the 168 differentially expressed genes are annotated with the 500-gene term of interest. Is it significant?</p>
-
-<ul>
-<li>Smaller backround (e.g. proteomic dataset)</li>
-<li>Fewer annotation terms tested?</li>
-</ul></li>
-
-<li><p>QUESTION : How many of the of the 168 differentially expressed genes have to be annotated with a 500-gene term of interest for it to be significant at p=0.05?</p>
-
-<ul>
-<li>What about a term with 30 annotated genes?</li>
-</ul></li>
-</ol>
-
-<p>ANSWER
-    - No, corrected pval=0.217
-    - 19 genes == 11% bs the 3.5% of bg
-    - 5 / 30 genes = ~3% vs 0.2% of bg</p>
-
-<p>NB: This is just a toy calculator for this training, it is quite constrained. Bonus points if you break it. There are likely many better ones online e.g. : <a href="https://keisan.casio.com/exec/system/1180573201">https://keisan.casio.com/exec/system/1180573201</a></p>
-
-<h2 id="enrichment-in-gprofiler">Enrichment in gProfiler?</h2>
-
-<p>Try gprofiler GOSt for functional enrichment: <a href="https://biit.cs.ut.ee/gprofiler/gost">https://biit.cs.ut.ee/gprofiler/gost</a></p>
-
-<p>Using the 168 differentially expressed gene list.</p>
-
-<p>NB: Set the background gene list with _Advanced Options &gt; Statistical Domain scope &gt; Custom : Paste in genelist _</p>
-
-<h2 id="enrichment-in-david">Enrichment in DAVID</h2>
-
-<p><em>(Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features.</em></p>
-
-<p>Try calculating funtional enrichment in DAVID:  <a href="https://david.ncifcrf.gov/">https://david.ncifcrf.gov/</a></p>
-
-<p>Use the 168 differentially expressed gene list and the background set.</p>
-
-<p>NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won&rsquo;t allow gene names due to potential ambiguity. Select &ldquo;ENSEMBL_GENE_ID&rdquo; for id type.</p>
-
-<ol>
-<li><p>QUESTION : Look at the results for the GO terms. Why is it different to gProfiler?</p></li>
-
-<li><p>QUESTION : Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?</p></li>
-</ol>
-
-<p>ANSWER:
-  - Same DB, different tools. GO is a tree and gets carved in differen ways.
-  - P-value isn&rsquo;t everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.</p>
-
-<h2 id="explore-in-string">Explore in String?</h2>
-
-<p>Exlore protein-protein interactions with STRING: <a href="https://string-db.org">https://string-db.org</a></p>
-
-<p>Use the 168 differentially expressed genes. No background needed for this one, not interested in calculating the enrichment.</p>
-
-<p>QUESTION: Click through on the interactions to see what the evidence for a protein-protein interaction is. Do you trust that interaction?</p>
-
-<h2 id="explore-in-reactome">Explore in Reactome?</h2>
-
-<p>Expore enrichment in the the pathway browser of reactome : <a href="https://reactome.org/">https://reactome.org/</a></p>
-
-<p>Go to &lsquo;analyse data&rsquo; and paste the 168 differentially expressed genes. No background.</p>
-
-<p>QUESTION: Click through &lsquo;Syndecan Interactions&rsquo; And expand it one the left hand tree.</p>
-
-<p>QUESTION: Go back to <a href="https://reactome.org/">https://reactome.org/</a> and search for your favourite pathway/process/gene. Is it covered?</p>
-
-<h2 id="end-of-session-challenge-dr-dodge-s-experiment">End of session Challenge : Dr Dodge&rsquo;s Experiment</h2>
-
-<p>There&rsquo;s quite a few ways you can calculate functional enrichment - so there&rsquo;s always a risk of <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002106">p-hacking</a>, wheather accidental or deliberate.</p>
-
-<p><em>So lets go deliberate&hellip;</em></p>
-
-<p>Dr Dodge is convinced that your experiment should turn out with relevants to GO term &lsquo;segmentation&rsquo; (don&rsquo;t ask why..) but p=0.06! But they must be significant, the paper has to be submitted by Friday!</p>
-
-<p>What hacky and statsticically questionable approaches could you apply to call these results &ldquo;significant&rdquo;?</p>
+<p>NB: Other tools and approaches will have different looking results - but generally you will end up with a table of genes with some measure of statitical confidence.
+The methods for functional enrichment analysis should be similar.</p>
 
 
 <footer class=" footline" >
@@ -486,6 +388,40 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -513,42 +449,6 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -569,7 +469,6 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
             
             
                 
-                    
                     
                 
                 
@@ -594,10 +493,10 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
 	 
 	 
 		
-			<a class="nav nav-prev" href="/enrichment_analysis_workshop/supplementary/basics/" title="Basics"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/" title="Content"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/supplementary/example-data-preparation/" title="Example Data Preparation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/supplementary/" title="Supplementary" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

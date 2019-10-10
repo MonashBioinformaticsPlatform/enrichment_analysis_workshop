@@ -1,8 +1,13 @@
 ---
-title: Content
-weight: 10
+title: Functional Enrichment Workshop
+weight: 1
 chapter: true
 ---
 
-# Content
-testing 123
+# Functional Enrichment Workshop
+ 
+Welcome.
+
+{{% children depth="3" %}}
+
+
