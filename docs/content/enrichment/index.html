@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Categories :: Functional Analysis</title>
+    <title>Enrichment Tools :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1570666070" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/categories/">
+  <body class="" data-url="/enrichment_analysis_workshop/content/enrichment/">
     <nav id="sidebar" class="">
 
 
@@ -100,7 +100,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/content/" title="Enrichment analysis workshop material" class="dd-item 
-        
+        parent
         
         
         ">
@@ -200,7 +200,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/enrichment/" title="Enrichment Tools" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/enrichment/" title="Enrichment Tools" class="dd-item active">
         <a href="/enrichment_analysis_workshop/content/enrichment/">
         Enrichment Tools
         
@@ -424,7 +424,13 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > Categories
+            
+            
+          
+          
+            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > <a href='/enrichment_analysis_workshop/content/'>Enrichment analysis workshop material</a> > Enrichment Tools
+          
+         
           
          
           
@@ -435,7 +441,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#enrichment-in-gprofiler">Enrichment in gProfiler?</a></li>
+<li><a href="#enrichment-in-david">Enrichment in DAVID</a></li>
+<li><a href="#explore-in-string">Explore in String?</a></li>
+<li><a href="#explore-in-reactome">Explore in Reactome?</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -451,7 +467,7 @@
           
             <h1>
               
-              Categories
+              Enrichment Tools
             </h1>
           
 
@@ -461,15 +477,57 @@
 
 
 
+<h2 id="enrichment-in-gprofiler">Enrichment in gProfiler?</h2>
 
-<ul>
-	
-</ul>
+<p>Try gprofiler GOSt for functional enrichment: <a href="https://biit.cs.ut.ee/gprofiler/gost">https://biit.cs.ut.ee/gprofiler/gost</a></p>
+
+<p>Using the 168 differentially expressed gene list.</p>
+
+<p>NB: Set the background gene list with _Advanced Options &gt; Statistical Domain scope &gt; Custom : Paste in genelist _</p>
+
+<h2 id="enrichment-in-david">Enrichment in DAVID</h2>
+
+<p><em>(Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features.</em></p>
+
+<p>Try calculating funtional enrichment in DAVID:  <a href="https://david.ncifcrf.gov/">https://david.ncifcrf.gov/</a></p>
+
+<p>Use the 168 differentially expressed gene list and the background set.</p>
+
+<p>NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won&rsquo;t allow gene names due to potential ambiguity. Select &ldquo;ENSEMBL_GENE_ID&rdquo; for id type.</p>
+
+<ol>
+<li><p>QUESTION : Look at the results for the GO terms. Why is it different to gProfiler?</p></li>
+
+<li><p>QUESTION : Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?</p></li>
+</ol>
+
+<p>ANSWER:
+  - Same DB, different tools. GO is a tree and gets carved in differen ways.
+  - P-value isn&rsquo;t everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.</p>
+
+<h2 id="explore-in-string">Explore in String?</h2>
+
+<p>Exlore protein-protein interactions with STRING: <a href="https://string-db.org">https://string-db.org</a></p>
+
+<p>Use the 168 differentially expressed genes. No background needed for this one, not interested in calculating the enrichment.</p>
+
+<p>QUESTION: Click through on the interactions to see what the evidence for a protein-protein interaction is. Do you trust that interaction?</p>
+
+<h2 id="explore-in-reactome">Explore in Reactome?</h2>
+
+<p>Expore enrichment in the the pathway browser of reactome : <a href="https://reactome.org/">https://reactome.org/</a></p>
+
+<p>Go to &lsquo;analyse data&rsquo; and paste the 168 differentially expressed genes. No background.</p>
+
+<p>QUESTION: Click through &lsquo;Syndecan Interactions&rsquo; And expand it one the left hand tree.</p>
+
+<p>QUESTION: Go back to <a href="https://reactome.org/">https://reactome.org/</a> and search for your favourite pathway/process/gene. Is it covered?</p>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -521,6 +579,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -533,6 +592,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -598,6 +660,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -613,6 +676,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -733,8 +799,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/genelists/" title="Defining the genelist"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/content/resources/" title="Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -764,3 +832,4 @@
 
   </body>
 </html>
+

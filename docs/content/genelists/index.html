@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Categories :: Functional Analysis</title>
+    <title>Defining the genelist :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1570666070" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/categories/">
+  <body class="" data-url="/enrichment_analysis_workshop/content/genelists/">
     <nav id="sidebar" class="">
 
 
@@ -100,7 +100,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/content/" title="Enrichment analysis workshop material" class="dd-item 
-        
+        parent
         
         
         ">
@@ -181,7 +181,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/genelists/" title="Defining the genelist" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/genelists/" title="Defining the genelist" class="dd-item active">
         <a href="/enrichment_analysis_workshop/content/genelists/">
         Defining the genelist
         
@@ -424,7 +424,13 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > Categories
+            
+            
+          
+          
+            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > <a href='/enrichment_analysis_workshop/content/'>Enrichment analysis workshop material</a> > Defining the genelist
+          
+         
           
          
           
@@ -451,7 +457,7 @@
           
             <h1>
               
-              Categories
+              Defining the genelist
             </h1>
           
 
@@ -459,17 +465,48 @@
 
 
 
+<p>SH-SY5Y is a widely-used neuroblastoma cell line.
+With approriate treatment, they can be readily differentiated from their base state
+into a more neuronal phenotype.</p>
 
+<p>In their paper <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y"><em>Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells</em></a>
+Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).</p>
 
+<p>Here are some differential expression results from  their raw data:
+<a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
+
+<ol>
+<li><p>Download the full table of data from degust.  Import into excel. <!-- File>Import --></p></li>
+
+<li><p>QUESTION: How many genes are differentially expressed?</p>
 
 <ul>
-	
-</ul>
+<li>Significant at 0.01? (FDR Column = Corrected P-value)   <strong>6391 ( this is massive )</strong></li>
+<li>And because there are so many in this experiment (its a massive change to cells) -  At 2-fold up/down regulated? <strong>2412 (still very large!)</strong><br /></li>
+<li>And (Just for this exercise!) -  take significance at p&lt;1x10^-7, with 2x fold change? This is a ridiculous threhsold - typically you would only filtere at p&lt;0.01 (and occasionally 2fold change) but the difference between the two cell conditions is pretty extreme! This threshold gives a more normal number of differentially expressed genes for downstream analysis. <strong>168</strong>
+NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</li>
+</ul></li>
+
+<li><p>QUESTION: How many genes are <em>tested</em>? This is your background.</p>
+
+<ul>
+<li>But with ~20k human genes - why are there genes missing? <strong>14420</strong></li>
+</ul></li>
+
+<li><p>COMMON GOTCHA: Can you find SEPT4?</p>
+
+<ul>
+<li>Because <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7"><em>Gene name errors are widespread in the scientific literature</em></a></li>
+<li>You can&rsquo;t fix it automatically (try converting it to text!). You have to avoid it by importing gene columns as &lsquo;text&rsquo; columns in excel. See video from HUGO : <a href="https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1">https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1</a></li>
+<li>NB: You can ignore these for this workshop, but you want this to be right for publication!</li>
+</ul></li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -521,6 +558,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -533,6 +571,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -582,6 +623,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -597,6 +639,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -733,8 +778,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/example-dataset/" title="Example: SH-SY5Y Differentiation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/content/enrichment/" title="Enrichment Tools" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -764,3 +811,4 @@
 
   </body>
 </html>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Functional Analysis</title>
+    <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/</link>
+    <description>Recent content in Notes on Functional Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Sep 2019 16:30:37 +1000</lastBuildDate>
+    
+	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basics</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/basics/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/basics/</guid>
+      <description>Functional analysis of -Omics data Notes, to be removed
+Overview of enrichment methods  Types  Gene list based Rank Based Network based  Hypogeometric distribution and Fisher&amp;rsquo;s exact test  Over/under representation? Background list Select organism Difference between database and tool and both  What is GO? A tree. Other stats considerations:
+ Multiple hypothesis correction Importance of background, what is it. Effect of gene list size? What size do you need?</description>
+    </item>
+    
+    <item>
+      <title>Activities</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/activities/</link>
+      <pubDate>Mon, 30 Sep 2019 16:30:37 +1000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/activities/</guid>
+      <description>This is to be merged into sections by topic.
+Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>
+    </item>
+    
+  </channel>
+</rss>

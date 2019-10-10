@@ -12,17 +12,28 @@
     
     
     <item>
-      <title>Overview</title>
-      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/overview/</link>
-      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      <title>Introduction</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/overview/</guid>
-      <description>Functional analysis of -Omics data General information The workshop covers the bioinformatics concepts and tools available for interpreting a gene list using gene ontology and pathway information. The workshop focuses on the principles and concepts required for analyzing and conducting functiona and pathway analysis on a gene list from any organism, although focus will be on human and model eukaryotic organisms.
-Course Objectives Participants will gain practical experience and skills to be able to:</description>
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/intro/</guid>
+      <description>Link to intro slides?</description>
     </item>
     
     <item>
-      <title>Example Analysis: SH-SY5Y Differentiation</title>
+      <title>Enrichment analysis statistics</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/stats/</guid>
+      <description>Check out the toy enrichment calculater here
+ QUESTION: If 17 of the 168 differentially expressed genes are annotated with the 500-gene term of interest. Is it significant?
+ Smaller backround (e.g. proteomic dataset) Fewer annotation terms tested?  QUESTION : How many of the of the 168 differentially expressed genes have to be annotated with a 500-gene term of interest for it to be significant at p=0.05?
+ What about a term with 30 annotated genes?</description>
+    </item>
+    
+    <item>
+      <title>Example: SH-SY5Y Differentiation</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/example-dataset/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
       
@@ -30,6 +41,51 @@ Course Objectives Participants will gain practical experience and skills to be a
       <description>SH-SY5Y Differentiation SH-SY5Y is a commonly used neuroblastoma cell line. With appropriate treatment, it can be induced to differentiate into a ‘more neuronal’ form. Differentiated cells look quite different, growing thin neurites out from the body of the cell.
 Image from Figure 4 (Pezzini et al. 2017)
 The question: What pathways are involved in SH-SY5Y Differentiation? In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>
+    </item>
+    
+    <item>
+      <title>Defining the genelist</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/genelists/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/genelists/</guid>
+      <description>SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
+In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).
+Here are some differential expression results from their raw data: http://degust.</description>
+    </item>
+    
+    <item>
+      <title>Enrichment Tools</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/enrichment/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/enrichment/</guid>
+      <description>Enrichment in gProfiler? Try gprofiler GOSt for functional enrichment: https://biit.cs.ut.ee/gprofiler/gost
+Using the 168 differentially expressed gene list.
+NB: Set the background gene list with _Advanced Options &amp;gt; Statistical Domain scope &amp;gt; Custom : Paste in genelist _
+Enrichment in DAVID (Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features.
+Try calculating funtional enrichment in DAVID: https://david.ncifcrf.gov/</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/resources/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/resources/</guid>
+      <description>List of useful tools with description.</description>
+    </item>
+    
+    <item>
+      <title>End of Session Challenge</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/challenge/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/challenge/</guid>
+      <description>Dr Dodge&amp;rsquo;s Experiment There&amp;rsquo;s quite a few ways you can calculate functional enrichment - so there&amp;rsquo;s always a risk of p-hacking, wheather accidental or deliberate.
+So lets go deliberate&amp;hellip;
+Dr Dodge is convinced that your experiment should turn out with relevance to GO term &amp;lsquo;segmentation&amp;rsquo; - but p=0.06! But they must be significant, the paper has to be submitted by Friday!
+What hacky and statsticically questionable approaches could you apply to call these results &amp;ldquo;significant&amp;rdquo;?</description>
     </item>
     
     <item>
@@ -45,10 +101,10 @@ This document describes a simple reanalysis of their raw data, to produce the re
     
     <item>
       <title>Basics</title>
-      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/basics/</link>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/basics/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/basics/</guid>
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/basics/</guid>
       <description>Functional analysis of -Omics data Notes, to be removed
 Overview of enrichment methods  Types  Gene list based Rank Based Network based  Hypogeometric distribution and Fisher&amp;rsquo;s exact test  Over/under representation? Background list Select organism Difference between database and tool and both  What is GO? A tree. Other stats considerations:
  Multiple hypothesis correction Importance of background, what is it. Effect of gene list size? What size do you need?</description>
@@ -56,10 +112,10 @@ Overview of enrichment methods  Types  Gene list based Rank Based Network based 
     
     <item>
       <title>Activities</title>
-      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/activities/</link>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/activities/</link>
       <pubDate>Mon, 30 Sep 2019 16:30:37 +1000</pubDate>
       
-      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/supplementary/activities/</guid>
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/notes/activities/</guid>
       <description>This is to be merged into sections by topic.
 Activity - Getting a list of DE genes SH-SY5Y is a widely-used neuroblastoma cell line. With approriate treatment, they can be readily differentiated from their base state into a more neuronal phenotype.
 In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>

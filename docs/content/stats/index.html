@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Categories :: Functional Analysis</title>
+    <title>Enrichment analysis statistics :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1570666070" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/categories/">
+  <body class="" data-url="/enrichment_analysis_workshop/content/stats/">
     <nav id="sidebar" class="">
 
 
@@ -100,7 +100,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/content/" title="Enrichment analysis workshop material" class="dd-item 
-        
+        parent
         
         
         ">
@@ -143,7 +143,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/stats/" title="Enrichment analysis statistics" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/stats/" title="Enrichment analysis statistics" class="dd-item active">
         <a href="/enrichment_analysis_workshop/content/stats/">
         Enrichment analysis statistics
         
@@ -424,7 +424,13 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > Categories
+            
+            
+          
+          
+            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > <a href='/enrichment_analysis_workshop/content/'>Enrichment analysis workshop material</a> > Enrichment analysis statistics
+          
+         
           
          
           
@@ -451,7 +457,7 @@
           
             <h1>
               
-              Categories
+              Enrichment analysis statistics
             </h1>
           
 
@@ -459,17 +465,35 @@
 
 
 
+<p>Check out the toy enrichment calculater <a href="https://bioinformatics3.erc.monash.edu/rsconnect/connect/#/apps/40/access">here</a></p>
 
-
+<ol>
+<li><p>QUESTION: If 17 of the 168 differentially expressed genes are annotated with the 500-gene term of interest. Is it significant?</p>
 
 <ul>
-	
-</ul>
+<li>Smaller backround (e.g. proteomic dataset)</li>
+<li>Fewer annotation terms tested?</li>
+</ul></li>
+
+<li><p>QUESTION : How many of the of the 168 differentially expressed genes have to be annotated with a 500-gene term of interest for it to be significant at p=0.05?</p>
+
+<ul>
+<li>What about a term with 30 annotated genes?</li>
+</ul></li>
+</ol>
+
+<p>ANSWER
+    - No, corrected pval=0.217
+    - 19 genes == 11% bs the 3.5% of bg
+    - 5 / 30 genes = ~3% vs 0.2% of bg</p>
+
+<p>NB: This is just a toy calculator for this training, it is quite constrained. Bonus points if you break it. There are likely many better ones online e.g. : <a href="https://keisan.casio.com/exec/system/1180573201">https://keisan.casio.com/exec/system/1180573201</a></p>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -521,6 +545,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -533,6 +558,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -550,6 +578,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -565,6 +594,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -733,8 +765,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/intro/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/content/example-dataset/" title="Example: SH-SY5Y Differentiation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -764,3 +798,4 @@
 
   </body>
 </html>
+
