@@ -12,20 +12,20 @@
     <title>Resources :: Functional Analysis</title>
 
     
-    <link href="/enrichment_analysis_workshop/css/nucleus.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hybrid.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/theme.css?1570666070" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1570666070" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/nucleus.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hybrid.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/theme.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1571207966" rel="stylesheet">
     
-      <link href="/enrichment_analysis_workshop/css/theme-green.css?1570666070" rel="stylesheet">
+      <link href="/enrichment_analysis_workshop/css/theme-green.css?1571207966" rel="stylesheet">
     
 
-    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1570666070"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1571207966"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -441,7 +441,20 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#g-profiler-g-gost">g:Profiler / g:GOSt</a></li>
+<li><a href="#panther">PANTHER</a></li>
+<li><a href="#david">DAVID</a></li>
+<li><a href="#reactome">Reactome</a></li>
+<li><a href="#stringdb">STRINGdb</a></li>
+<li><a href="#biocyc">Biocyc</a></li>
+<li><a href="#cytoscape">Cytoscape</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -465,7 +478,70 @@
 
 
 
-<p>List of useful tools with description.</p>
+
+
+<p>The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop.
+Note that most of these tools do more than just enrichment tests.</p>
+
+<!-- https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/shsy5ydiff.png) 
+http://localhost:1313/enrichment_analysis_workshop/img/david.png
+--> 
+
+<h2 id="g-profiler-g-gost">g:Profiler / g:GOSt</h2>
+
+<p><a href="https://biit.cs.ut.ee/gprofiler/gost">https://biit.cs.ut.ee/gprofiler/gost</a></p>
+
+<p>The g:GOSt &lsquo;functional profiling&rsquo; tool of g:Profiler calculates
+It has a clean modern interface and a handy summary of which genes contribute to the enrichment.</p>
+
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/gprofiler.png" alt="" /></p>
+
+<h2 id="panther">PANTHER</h2>
+
+<p><a href="http://www.pantherdb.org/">http://www.pantherdb.org/</a></p>
+
+<p>PANTHER performs overrepresnetation tests across multiple databases; Gene ontology, reactome, PANTHER pathways and protein classes. Allows more control over the statistical test used and clearly summarise what was actually done.</p>
+
+<p><strong>NB: Enrichment vs overrepresentation test???</strong>
+<img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/panther.png" alt="" /></p>
+
+<h2 id="david">DAVID</h2>
+
+<p><a href="https://david.ncifcrf.gov/">https://david.ncifcrf.gov/</a></p>
+
+<p>Via its &lsquo;functional annotation&rsquo; tool, DAVID allows you to calculate functional enrichment across a number of databases ; Gene Ontology, KEGG, reactome and others. Reliable, with a slightly clunky interface.</p>
+
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/david.png" alt="" /></p>
+
+<h2 id="reactome">Reactome</h2>
+
+<p><a href="https://reactome.org/">https://reactome.org/</a></p>
+
+<p>The core of reactome is the reactome pathways and browser. ALthough other tools use the reactome database, the reactome website provides a means to browse enrichment within the pathway browser view.</p>
+
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/reactome.png" alt="" /></p>
+
+<h2 id="stringdb">STRINGdb</h2>
+
+<p><a href="https://string-db.org/">https://string-db.org/</a></p>
+
+<p>STRING is not a functional enrichment tool, rather it is a convenient way to explore interactions within a genelist. Results are viewed as an interaction network. Best suited to smaller genelists.</p>
+
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/string.png" alt="" /></p>
+
+<h2 id="biocyc">Biocyc</h2>
+
+<p><a href="https://biocyc.org/">https://biocyc.org/</a></p>
+
+<p>Biocyc is another suite of tools for enrichment and pathway browsing, which is useful for prokaryotic work. It is licenced, but monash does have a licence.</p>
+
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/biocyc.png" alt="" /></p>
+
+<h2 id="cytoscape">Cytoscape</h2>
+
+<p><a href="https://cytoscape.org/">https://cytoscape.org/</a></p>
+
+<p>Cytoscape is a desktop-based biological network analysis / visualisation tool, rather than a functional enrichment tool (although plugins can change that). It is mentioned here because it is often useful as a next step when you need to create custom figures showing the interactions of an interesting biological pathway.</p>
 
 
 <footer class=" footline" >
@@ -756,19 +832,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1570666070"></script>
+    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1571207966"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/learn.js?1570666070"></script>
-    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1570666070"></script>
+    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/learn.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1571207966"></script>
 
-    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1570666070" rel="stylesheet" />
-    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1570666070"></script>
+    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1571207966" rel="stylesheet" />
+    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1571207966"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -63,8 +63,9 @@ Here are some differential expression results from their raw data: http://degust
       <description>Enrichment in gProfiler? Try gprofiler GOSt for functional enrichment: https://biit.cs.ut.ee/gprofiler/gost
 Using the 168 differentially expressed gene list.
 NB: Set the background gene list with _Advanced Options &amp;gt; Statistical Domain scope &amp;gt; Custom : Paste in genelist _
-Enrichment in DAVID (Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features.
-Try calculating funtional enrichment in DAVID: https://david.ncifcrf.gov/</description>
+Enrichment in DAVID (panther instead?)
+(Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features.
+Try calculating funtional enrichment in DAVID: https://david.</description>
     </item>
     
     <item>
@@ -73,7 +74,11 @@ Try calculating funtional enrichment in DAVID: https://david.ncifcrf.gov/</descr
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/resources/</guid>
-      <description>List of useful tools with description.</description>
+      <description>The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop. Note that most of these tools do more than just enrichment tests.
+g:Profiler / g:GOSt https://biit.cs.ut.ee/gprofiler/gost
+The g:GOSt &amp;lsquo;functional profiling&amp;rsquo; tool of g:Profiler calculates It has a clean modern interface and a handy summary of which genes contribute to the enrichment.
+PANTHER http://www.pantherdb.org/
+PANTHER performs overrepresnetation tests across multiple databases; Gene ontology, reactome, PANTHER pathways and protein classes.</description>
     </item>
     
     <item>
