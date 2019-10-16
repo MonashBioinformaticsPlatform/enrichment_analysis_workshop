@@ -16,6 +16,8 @@ NB: Set the background gene list with _Advanced Options > Statistical Domain sco
 
 ## Enrichment in DAVID 
 
+_(panther instead?)_
+
 _(Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features._
 
 Try calculating funtional enrichment in DAVID:  https://david.ncifcrf.gov/
