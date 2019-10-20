@@ -36,7 +36,8 @@ Time	|	Programme
 13:00	|	Session 2
 14:45	|	Wrap-up
 
-### Syllabus
+### Shared Notepad
+- [Click here](https://biotraining.erc.monash.edu/etherpad/p/functional_analysis_workshop) to go to the shared notepad.
 
 
 ### Post-workshop survey
