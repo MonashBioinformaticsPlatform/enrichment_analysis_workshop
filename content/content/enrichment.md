@@ -12,10 +12,10 @@ As gene symbols (CD2, DLG4 e.t.c).
 * [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
 * [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
-As ensemble gene ids (e.g. ENSG00000183654), preferred by some tools e.g. DAVID.
+As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger geneslists; e.g. PANTHER or DAVID background or STRING without a specified organism.  
 
-* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
-* [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
+* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_ensemblID.txt)
+* [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_ensemblID.txt)
 
 ---
 
@@ -27,7 +27,10 @@ Use the 168 differentially expressed gene list. Check out the results, and keep 
 
 Note: Set the background gene list with  _Advanced Options_ > _Statistical Domain scope_ > _Custom over annotated Genes_ . This includes anything in your background that has any annotation. 
 
+1. Whats the most enriched GO Biological process term? 
+
 > Note: Under advanced options there is also an option to calculate _underrepresentation_ - a lack of a certain term in the query list. There's not enough statistical power to show anything for this example.
+
 
 
 ### Enrichment in PANTHER
@@ -42,23 +45,7 @@ PANTHER prompts for the background set after hitting next. Under _Upload List_ B
 
 ##### Question
 
-1. Look at the results for the GO terms. How does it compare to gProfiler? What about the GO-slim annotation?
-
-
-
-### Enrichment in DAVID 
-
-Try calculating functional enrichment in DAVID:  https://david.ncifcrf.gov/
-
-NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won't allow gene names due to potential ambiguity. Select "ENSEMBL_GENE_ID" for id type.
-
-##### Question
-
-1. Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?
-
-<!--
-P-value isn't everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.
---> 
+2. Look at the results for the GO terms. How does it compare to gProfiler? What about the GO-slim annotation?
 
 
 ### Explore in String
@@ -71,7 +58,7 @@ Paste the 168 differentially expressed genes into the 'Multiple proteins' option
 
 ##### Question
 
-1. Click through on the interactions lines to see what the evidence for a interaction is. Do you trust that interaction?
+3. Click through on the interactions lines to see what the evidence for a interaction is. Do you trust that interaction?
 
 
 ### Explore in Reactome
@@ -85,4 +72,21 @@ Click through 'Syndecan Interactions', expand it one the left hand tree, then cl
 
 ##### Question
 
-1. Go back to https://reactome.org/ and search for your favourite pathway or process. Is it covered?
+4. Go back to https://reactome.org/ and search for your favourite pathway or process. Is it covered?
+
+
+
+
+### Enrichment in DAVID 
+
+Try calculating functional enrichment in DAVID:  https://david.ncifcrf.gov/
+
+NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won't allow gene names due to potential ambiguity. Select "ENSEMBL_GENE_ID" for id type.
+
+##### Question
+
+5. Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?
+
+<!--
+P-value isn't everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.
+--> 
