@@ -62,8 +62,7 @@ Activities  Download the full table of data from degust. Import into excel. Impo
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/enrichment/</guid>
       <description>We&amp;rsquo;re going to use the small 168-gene set for all these enrichment tools. If you don&amp;rsquo;t have them already, they are available here:
 As gene symbols (CD2, DLG4 e.t.c).
- 168-gene differentially expressed gene list Background list  As ensemble gene ids (e.g. ENSG00000183654), preferred by some tools e.g. DAVID.
- 168-gene differentially expressed gene list Background list   Enrichment in gProfiler? Try gProfiler GOSt for functional enrichment: https://biit.</description>
+ 168-gene differentially expressed gene list Background list  As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger geneslists; e.g. PANTHER or DAVID background or STRING without a specified organism.</description>
     </item>
     
     <item>

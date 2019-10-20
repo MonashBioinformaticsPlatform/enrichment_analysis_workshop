@@ -12,20 +12,20 @@
     <title>Enrichment Tools :: Functional Analysis</title>
 
     
-    <link href="/enrichment_analysis_workshop/css/nucleus.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hybrid.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/theme.css?1571615203" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1571615203" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/nucleus.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hybrid.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/theme.css?1571615515" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1571615515" rel="stylesheet">
     
-      <link href="/enrichment_analysis_workshop/css/theme-green.css?1571615203" rel="stylesheet">
+      <link href="/enrichment_analysis_workshop/css/theme-green.css?1571615515" rel="stylesheet">
     
 
-    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1571615203"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1571615515"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -367,21 +367,21 @@
 <li><a href="#question">Question</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#enrichment-in-david">Enrichment in DAVID</a>
+<li><a href="#explore-in-string">Explore in String</a>
 <ul>
 <li>
 <ul>
 <li><a href="#question-1">Question</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#explore-in-string">Explore in String</a>
+<li><a href="#explore-in-reactome">Explore in Reactome</a>
 <ul>
 <li>
 <ul>
 <li><a href="#question-2">Question</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#explore-in-reactome">Explore in Reactome</a>
+<li><a href="#enrichment-in-david">Enrichment in DAVID</a>
 <ul>
 <li>
 <ul>
@@ -426,11 +426,11 @@
 <li><a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt">Background list</a></li>
 </ul>
 
-<p>As ensemble gene ids (e.g. ENSG00000183654), preferred by some tools e.g. DAVID.</p>
+<p>As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger geneslists; e.g. PANTHER or DAVID background or STRING without a specified organism.</p>
 
 <ul>
-<li><a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt">168-gene differentially expressed gene list</a></li>
-<li><a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt">Background list </a></li>
+<li><a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_ensemblID.txt">168-gene differentially expressed gene list</a></li>
+<li><a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_ensemblID.txt">Background list </a></li>
 </ul>
 
 <hr />
@@ -442,6 +442,10 @@
 <p>Use the 168 differentially expressed gene list. Check out the results, and keep them open for the next step.</p>
 
 <p>Note: Set the background gene list with  <em>Advanced Options</em> &gt; <em>Statistical Domain scope</em> &gt; <em>Custom over annotated Genes</em> . This includes anything in your background that has any annotation.</p>
+
+<ol>
+<li>Whats the most enriched GO Biological process term?</li>
+</ol>
 
 <blockquote>
 <p>Note: Under advanced options there is also an option to calculate <em>underrepresentation</em> - a lack of a certain term in the query list. There&rsquo;s not enough statistical power to show anything for this example.</p>
@@ -462,22 +466,6 @@
 <li>Look at the results for the GO terms. How does it compare to gProfiler? What about the GO-slim annotation?</li>
 </ol>
 
-<h3 id="enrichment-in-david">Enrichment in DAVID</h3>
-
-<p>Try calculating functional enrichment in DAVID:  <a href="https://david.ncifcrf.gov/">https://david.ncifcrf.gov/</a></p>
-
-<p>NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won&rsquo;t allow gene names due to potential ambiguity. Select &ldquo;ENSEMBL_GENE_ID&rdquo; for id type.</p>
-
-<h5 id="question-1">Question</h5>
-
-<ol>
-<li>Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?</li>
-</ol>
-
-<!--
-P-value isn't everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.
---> 
-
 <h3 id="explore-in-string">Explore in String</h3>
 
 <p>Explore protein-protein interactions with STRING: <a href="https://string-db.org">https://string-db.org</a></p>
@@ -486,7 +474,7 @@ P-value isn't everything. Those few genes are hitting interactiving molecules wi
 
 <p>No background needed for this one, since we&rsquo;re not interested in calculating the enrichment.</p>
 
-<h5 id="question-2">Question</h5>
+<h5 id="question-1">Question</h5>
 
 <ol>
 <li>Click through on the interactions lines to see what the evidence for a interaction is. Do you trust that interaction?</li>
@@ -500,11 +488,27 @@ P-value isn't everything. Those few genes are hitting interactiving molecules wi
 
 <p>Click through &lsquo;Syndecan Interactions&rsquo;, expand it one the left hand tree, then click one of the subpathways to zoom in on the pathway view.</p>
 
-<h5 id="question-3">Question</h5>
+<h5 id="question-2">Question</h5>
 
 <ol>
 <li>Go back to <a href="https://reactome.org/">https://reactome.org/</a> and search for your favourite pathway or process. Is it covered?</li>
 </ol>
+
+<h3 id="enrichment-in-david">Enrichment in DAVID</h3>
+
+<p>Try calculating functional enrichment in DAVID:  <a href="https://david.ncifcrf.gov/">https://david.ncifcrf.gov/</a></p>
+
+<p>NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won&rsquo;t allow gene names due to potential ambiguity. Select &ldquo;ENSEMBL_GENE_ID&rdquo; for id type.</p>
+
+<h5 id="question-3">Question</h5>
+
+<ol>
+<li>Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?</li>
+</ol>
+
+<!--
+P-value isn't everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.
+--> 
 
 
 <footer class=" footline" >
@@ -747,19 +751,19 @@ P-value isn't everything. Those few genes are hitting interactiving molecules wi
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1571615203"></script>
+    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1571615515"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/learn.js?1571615203"></script>
-    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1571615203"></script>
+    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/learn.js?1571615515"></script>
+    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1571615515"></script>
 
-    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1571615203" rel="stylesheet" />
-    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1571615203"></script>
+    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1571615515" rel="stylesheet" />
+    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1571615515"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
