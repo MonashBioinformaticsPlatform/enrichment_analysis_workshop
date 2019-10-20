@@ -1,13 +1,13 @@
 ---
-title: Functional Enrichment Workshop
+title: Functional Analysis of -Omics Data
 weight: 1
 chapter: true
 ---
 
-# Functional Enrichment Workshop
- 
-Welcome.
+# Functional Analysis of Omics Data
 
-{{% children depth="3" %}}
+Welcome. 
+
+{{% children %}}
 
 

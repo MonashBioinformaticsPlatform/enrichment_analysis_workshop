@@ -5,52 +5,84 @@ weight: 7
 ---
 
 
-## Enrichment in gProfiler?
+We're going to use the small 168-gene set for all these enrichment tools. If you don't have them already, they are available here:
 
-Try gprofiler GOSt for functional enrichment: https://biit.cs.ut.ee/gprofiler/gost
+As gene symbols (CD2, DLG4 e.t.c).
 
-Using the 168 differentially expressed gene list.
+* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
+* [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
-NB: Set the background gene list with _Advanced Options > Statistical Domain scope > Custom : Paste in genelist _
+As ensemble gene ids (e.g. ENSG00000183654), preferred by some tools e.g. DAVID.
+
+* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
+* [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
+
+---
+
+### Enrichment in gProfiler?
+
+Try gProfiler GOSt for functional enrichment: https://biit.cs.ut.ee/gprofiler/gost
+
+Use the 168 differentially expressed gene list. Check out the results, and keep them open for the next step. 
+
+Note: Set the background gene list with  _Advanced Options_ > _Statistical Domain scope_ > _Custom over annotated Genes_ . This includes anything in your background that has any annotation. 
+
+> Note: Under advanced options there is also an option to calculate _underrepresentation_ - a lack of a certain term in the query list. There's not enough statistical power to show anything for this example.
 
 
-## Enrichment in DAVID 
+### Enrichment in PANTHER
 
-_(panther instead?)_
+Next try PANTHER :  https://david.ncifcrf.gov/
 
-_(Maybe skip?) Main point is that different tools give different results despite using the same databases! Though david has some nice features._
+Under _Select Analysis_ choose the _Statistical Overrepresentation test_ , with the 
+'GO Biological Process (BP) complete' annotation set. 
 
-Try calculating funtional enrichment in DAVID:  https://david.ncifcrf.gov/
+PANTHER prompts for the background set after hitting next. Under _Upload List_ Browse for the text file (linked above) that contains background genes in *ensemblID* format.
 
-Use the 168 differentially expressed gene list and the background set.
+
+##### Question
+
+1. Look at the results for the GO terms. How does it compare to gProfiler? What about the GO-slim annotation?
+
+
+
+### Enrichment in DAVID 
+
+Try calculating functional enrichment in DAVID:  https://david.ncifcrf.gov/
 
 NB: Need to use ensembl Ids (e.g. ENSG00000170075) for a background in DAVID, it won't allow gene names due to potential ambiguity. Select "ENSEMBL_GENE_ID" for id type.
 
-1. QUESTION : Look at the results for the GO terms. Why is it different to gProfiler?
+##### Question
 
-2. QUESTION : Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?
+1. Look at the KEGG results for Cellular adhesion molecules. Its not significant, but is it useful?
 
-ANSWER:
-  - Same DB, different tools. GO is a tree and gets carved in differen ways.
-  - P-value isn't everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.
-
-
-
-## Explore in String?
-
-Exlore protein-protein interactions with STRING: https://string-db.org
-
-Use the 168 differentially expressed genes. No background needed for this one, not interested in calculating the enrichment.
-
-QUESTION: Click through on the interactions to see what the evidence for a protein-protein interaction is. Do you trust that interaction?
+<!--
+P-value isn't everything. Those few genes are hitting interactiving molecules within the neural system. The immune system is irrevant to this experiment.
+--> 
 
 
-## Explore in Reactome?
+### Explore in String
 
-Expore enrichment in the the pathway browser of reactome : https://reactome.org/
+Explore protein-protein interactions with STRING: https://string-db.org
 
-Go to 'analyse data' and paste the 168 differentially expressed genes. No background. 
+Paste the 168 differentially expressed genes into the 'Multiple proteins' option, and select human. You can accept gene mappings on the next screen with 'continue'.
 
-QUESTION: Click through 'Syndecan Interactions' And expand it one the left hand tree. 
+ No background needed for this one, since we're not interested in calculating the enrichment.
 
-QUESTION: Go back to https://reactome.org/ and search for your favourite pathway/process/gene. Is it covered?
+##### Question
+
+1. Click through on the interactions lines to see what the evidence for a interaction is. Do you trust that interaction?
+
+
+### Explore in Reactome
+
+Explore enrichment in the the pathway browser of reactome : https://reactome.org/
+
+Go to 'analyse data' and paste the 168 differentially expressed genes. No background.
+
+Click through 'Syndecan Interactions', expand it one the left hand tree, then click one of the subpathways to zoom in on the pathway view. 
+
+
+##### Question
+
+1. Go back to https://reactome.org/ and search for your favourite pathway or process. Is it covered?

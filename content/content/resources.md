@@ -5,13 +5,15 @@ weight: 8
 ---
 
 The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop. 
-Note that most of these tools do more than just enrichment tests. 
+
 
 <!-- https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/shsy5ydiff.png) 
 http://localhost:1313/enrichment_analysis_workshop/img/david.png
 --> 
 
-## g:Profiler / g:GOSt
+Note that most of these tools do more than just enrichment tests, and some include their own databases. 
+
+### g:Profiler / g:GOSt
 
 https://biit.cs.ut.ee/gprofiler/gost
 
@@ -20,16 +22,15 @@ It has a clean modern interface and a handy summary of which genes contribute to
 
 ![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/gprofiler.png)
 
-## PANTHER 
+### PANTHER 
 
 http://www.pantherdb.org/
 
-PANTHER performs overrepresnetation tests across multiple databases; Gene ontology, reactome, PANTHER pathways and protein classes. Allows more control over the statistical test used and clearly summarise what was actually done.
+PANTHER performs overrepresentation tests across multiple databases; Gene ontology, reactome, PANTHER pathways and protein classes. Allows more control over the statistical test used and clearly summarises what was actually done.
 
-__NB: Enrichment vs overrepresentation test???__
 ![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/panther.png)
 
-## DAVID 
+### DAVID 
 
 https://david.ncifcrf.gov/
 
@@ -37,8 +38,17 @@ Via its 'functional annotation' tool, DAVID allows you to calculate functional e
 
 ![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/david.png)
 
+### Enrichr
 
-## Reactome
+https://amp.pharm.mssm.edu/Enrichr/
+
+Enrichr easily calculates enrichment across a wide range of databases. Currently does not allow for a background set. 
+
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/enrichr.png)
+
+
+
+### Reactome
 
 https://reactome.org/
 
@@ -47,7 +57,18 @@ The core of reactome is the reactome pathways and browser. ALthough other tools 
 ![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/reactome.png)
 
 
-## STRINGdb
+
+### Biocyc
+
+https://biocyc.org/
+
+Biocyc is another suite of tools for enrichment and pathway browsing, which is particularly useful for prokaryotic work. It is licensed, but Monash does have a license.
+
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/biocyc.png)
+
+
+
+### STRINGdb
 
 https://string-db.org/
 
@@ -56,20 +77,36 @@ STRING is not a functional enrichment tool, rather it is a convenient way to exp
 ![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/string.png)
 
 
-## Biocyc
+### Gene Ontology
 
-https://biocyc.org/
+http://geneontology.org/
 
-Biocyc is another suite of tools for enrichment and pathway browsing, which is useful for prokaryotic work. It is licenced, but monash does have a licence.
+Gene Ontology (GO) terms are the most widely use set of functional annotations, used by many enrichment tools. The gene ontology resource website itself provides several tools for browsing the GO term hierarchy.
 
-![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/biocyc.png)
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/go.png)
+
+### KEGG
+
+https://www.genome.jp/kegg/
+
+A well known curated pathway database. It is used by many other tools but with a caveat - KEGG moved to a subscription model in 2011, and so enrichment tools need to use the last open release from 2011. However up to date KEGG pathways are browsable directly through their website. 
+
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/kegg.png)
 
 
+### GSEA and MSigDB
 
-## Cytoscape
+http://software.broadinstitute.org/gsea/index.jsp
+
+The desktop-based GSEA tool is (one of many) gene set enrichment approaches. It uses of gene rankings across all genes rather than hypogeometric or fishers-exact tests of genelist enrichment.  MSigDB (Molecular signatures database) is a suite of annotation databases suitable for GSEA analysis.
+
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/gsea.png)
+
+### Cytoscape
 
 https://cytoscape.org/
 
-Cytoscape is a desktop-based biological network analysis / visualisation tool, rather than a functional enrichment tool (although plugins can change that). It is mentioned here because it is often useful as a next step when you need to create custom figures showing the interactions of an interesting biological pathway. 
+Cytoscape is a desktop-based biological network analysis / visualization tool, rather than a functional enrichment tool (although plugins can change that). It is mentioned here because it is often useful as a next step when you need to create custom figures showing the interactions of an interesting biological pathway. 
 
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/cytoscape.png)
 
