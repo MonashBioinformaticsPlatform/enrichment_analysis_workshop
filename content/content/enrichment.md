@@ -9,13 +9,13 @@ We're going to use the small 168-gene set for all these enrichment tools. If you
 
 As gene symbols (CD2, DLG4 e.t.c).
 
-* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
-* [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
+* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
+* [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
 As ensemble gene ids (e.g. ENSG00000183654), preferred by some tools e.g. DAVID.
 
-* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
-* [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
+* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
+* [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
 ---
 
