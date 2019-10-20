@@ -40,5 +40,5 @@ Time	|	Programme
 
 
 ### Post-workshop survey
-We appreciate your feedback (both positive and negative !) - please fill this out in the last 5 mins of the workshop: 
+We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey ([https://tinyurl.com/FAOD-Oct-19](https://tinyurl.com/FAOD-Oct-19)) in the last 5 mins.
 
