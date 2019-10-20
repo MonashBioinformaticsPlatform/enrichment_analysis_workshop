@@ -12,20 +12,20 @@
     <title>Defining the genelist :: Functional Analysis</title>
 
     
-    <link href="/enrichment_analysis_workshop/css/nucleus.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hybrid.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/theme.css?1571207966" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1571207966" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/nucleus.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hybrid.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/theme.css?1571558556" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1571558556" rel="stylesheet">
     
-      <link href="/enrichment_analysis_workshop/css/theme-green.css?1571207966" rel="stylesheet">
+      <link href="/enrichment_analysis_workshop/css/theme-green.css?1571558556" rel="stylesheet">
     
 
-    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1571558556"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -99,13 +99,13 @@
  
   
     
-    <li data-nav-id="/enrichment_analysis_workshop/content/" title="Enrichment analysis workshop material" class="dd-item 
+    <li data-nav-id="/enrichment_analysis_workshop/content/" title="Workshop material" class="dd-item 
         parent
         
         
         ">
       <a href="/enrichment_analysis_workshop/content/">
-          Enrichment analysis workshop material
+          Workshop material
           
       </a>
       
@@ -143,9 +143,9 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/stats/" title="Enrichment analysis statistics" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/stats/" title="Enrichment Statistics" class="dd-item ">
         <a href="/enrichment_analysis_workshop/content/stats/">
-        Enrichment analysis statistics
+        Enrichment Statistics
         
         </a>
     </li>
@@ -162,9 +162,9 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/example-dataset/" title="Example: SH-SY5Y Differentiation" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/example-dataset/" title="Example Analysis" class="dd-item ">
         <a href="/enrichment_analysis_workshop/content/example-dataset/">
-        Example: SH-SY5Y Differentiation
+        Example Analysis
         
         </a>
     </li>
@@ -309,76 +309,6 @@
  
 
           
-          
-
-
- 
-  
-    
-    <li data-nav-id="/enrichment_analysis_workshop/notes/" title="Notes" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/enrichment_analysis_workshop/notes/">
-          Notes
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/enrichment_analysis_workshop/notes/basics/" title="Basics" class="dd-item ">
-        <a href="/enrichment_analysis_workshop/notes/basics/">
-        Basics
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/enrichment_analysis_workshop/notes/activities/" title="Activities" class="dd-item ">
-        <a href="/enrichment_analysis_workshop/notes/activities/">
-        Activities
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
          
     </ul>
 
@@ -428,7 +358,7 @@
             
           
           
-            <a href='/enrichment_analysis_workshop/'>Functional Enrichment Workshop</a> > <a href='/enrichment_analysis_workshop/content/'>Enrichment analysis workshop material</a> > Defining the genelist
+            <a href='/enrichment_analysis_workshop/'>Functional Analysis of -Omics Data</a> > <a href='/enrichment_analysis_workshop/content/'>Workshop material</a> > Defining the genelist
           
          
           
@@ -441,7 +371,24 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#activities">Activities</a></li>
+<li><a href="#common-gotcha">Common gotcha</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -465,42 +412,70 @@
 
 
 
-<p>SH-SY5Y is a widely-used neuroblastoma cell line.
-With approriate treatment, they can be readily differentiated from their base state
-into a more neuronal phenotype.</p>
 
-<p>In their paper <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y"><em>Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells</em></a>
-Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al. 2017).</p>
 
-<p>Here are some differential expression results from  their raw data:
-<a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds</a></p>
+<p>Starting from those differential expression results <a href="http://degust.erc.monash.edu/degust/compare.html?code=5b2c7805ab8f8c5f2dc8c72e61b049b0#?plot=mds">here</a>, how do we go about getting a genelist to calculate enrichment on?</p>
+
+<h5 id="activities">Activities</h5>
 
 <ol>
-<li><p>Download the full table of data from degust.  Import into excel. <!-- File>Import --></p></li>
+<li><p>Download the full table of data from degust. Import into excel. <!-- File>Import --></p></li>
 
-<li><p>QUESTION: How many genes are differentially expressed?</p>
-
-<ul>
-<li>Significant at 0.01? (FDR Column = Corrected P-value)   <strong>6391 ( this is massive )</strong></li>
-<li>And because there are so many in this experiment (its a massive change to cells) -  At 2-fold up/down regulated? <strong>2412 (still very large!)</strong><br /></li>
-<li>And (Just for this exercise!) -  take significance at p&lt;1x10^-7, with 2x fold change? This is a ridiculous threhsold - typically you would only filtere at p&lt;0.01 (and occasionally 2fold change) but the difference between the two cell conditions is pretty extreme! This threshold gives a more normal number of differentially expressed genes for downstream analysis. <strong>168</strong>
-NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</li>
-</ul></li>
-
-<li><p>QUESTION: How many genes are <em>tested</em>? This is your background.</p>
+<li><p>How many genes are differentially expressed? In these results the FDR Column contains the corrected p-value, and the &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</p>
 
 <ul>
-<li>But with ~20k human genes - why are there genes missing? <strong>14420</strong></li>
-</ul></li>
+<li>Significant at 0.01?</li>
 
-<li><p>COMMON GOTCHA: Can you find SEPT4?</p>
+<li><p>That&rsquo;s a particularly large number of genes - perhaps not unexpected given how much the cells are changed this experiment. How many significant genes also have 2-fold change in expression?</p></li>
 
-<ul>
-<li>Because <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7"><em>Gene name errors are widespread in the scientific literature</em></a></li>
-<li>You can&rsquo;t fix it automatically (try converting it to text!). You have to avoid it by importing gene columns as &lsquo;text&rsquo; columns in excel. See video from HUGO : <a href="https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1">https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1</a></li>
-<li>NB: You can ignore these for this workshop, but you want this to be right for publication!</li>
-</ul></li>
+<li><p>For this workshop, get the genes with a FDR &lt;1x10^-7 and 2x fold change. Note that this is a ridiculous threshold - typically you would only filter at p&lt;0.01 (and occasionally 2-fold change) but the difference between the two cell conditions is pretty extreme! However, this arbitrary threshold gives a more typical number of differentially expressed genes for downstream analysis. An alternative approach could be to take the top 500 genes.</p></li>
+</ul>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Show
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        There are 6391 differentially expressed genes, 2412 of which have a 2-fold change in expression. With the aggressive filtering - there are 168 genes left
+    </div>
+</div></li>
+
+<li><p>How many genes are <em>tested</em>? This is your background.
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Show
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        14420 genes tested.
+    </div>
+</div></p></li>
 </ol>
+
+<!--But with ~20k human genes - why are there genes missing? **14420** --> 
+
+<hr />
+
+<h5 id="common-gotcha">Common gotcha</h5>
+
+<p>Can you find SEPT4? Because <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7"><em>Gene name errors are widespread in the scientific literature</em></a></p>
+
+<p>You can&rsquo;t revert the gene names automatically (try converting it to text!). You have to avoid it in the first place by importing gene columns as &lsquo;text&rsquo; columns in excel.  See video from HUGO : <a href="https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1">https://www.genenames.org/help/faq/#!/#tocAnchor-1-25-1</a></p>
+
+<!--NB: You can ignore these for this workshop, but you want this to be right for publication!-->
 
 
 <footer class=" footline" >
@@ -721,54 +696,6 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
             
         
         
@@ -778,7 +705,7 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
 	 
 	 
 		
-			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/example-dataset/" title="Example: SH-SY5Y Differentiation"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/example-dataset/" title="Example Analysis"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/enrichment_analysis_workshop/content/enrichment/" title="Enrichment Tools" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -791,19 +718,19 @@ NB: The &lsquo;differentiated&rsquo; column shows the log2 fold-change of differ
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1571558556"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/learn.js?1571207966"></script>
-    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1571207966"></script>
+    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/learn.js?1571558556"></script>
+    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1571558556"></script>
 
-    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1571207966" rel="stylesheet" />
-    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1571207966"></script>
+    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1571558556" rel="stylesheet" />
+    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1571558556"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
