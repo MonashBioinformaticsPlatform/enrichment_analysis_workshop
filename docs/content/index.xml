@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Introduction</title>
+      <title>Basics</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/intro/</guid>
-      <description>Link to intro slides?</description>
+      <description>Link to slides.</description>
     </item>
     
     <item>
@@ -88,6 +88,15 @@ PANTHER performs overrepresentation tests across multiple databases; Gene ontolo
 So lets go deliberate&amp;hellip;
 Dr Dodge is convinced that your experiment should turn out with relevance to GO term &amp;lsquo;segmentation&amp;rsquo; - but p=0.06! But they must be significant, the paper needs be submitted by Friday!
 What hacky and statistically questionable approaches could you apply to call these results &amp;ldquo;significant&amp;rdquo;?</description>
+    </item>
+    
+    <item>
+      <title>Feedback</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/end/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/end/</guid>
+      <description>We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey (https://tinyurl.com/FAOD-Oct-19)</description>
     </item>
     
   </channel>
