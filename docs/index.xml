@@ -26,10 +26,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/stats/</guid>
-      <description>Link to open toy enrichment calculator.
-This calculates enrichment for a single hypothetical genelist (e.g. your RNAseq differentially expressed genelist) against a single hypothetical &amp;lsquo;term&amp;rsquo; (some set of interesting genes, e.g. synaptic signaling genes). It makes a Venn diagram and a wordy description of what is being tested.
-You can adjust various factors and see their effect on the enrichment p-values.
- Note: This is just a toy calculator for this training, it quite limited.</description>
+      <description>Enrichment statistics are based on a contingency table like so:
+   Gene ..in term ..not in term Total     ..in gene list 50 100 150   ..not in gene list (but in background) 200 15900 16100   Total 250 16000 16250    This is based on the 16250 genes that were measured in your experiment.
+Note that there might be extra genes that weren&amp;rsquo;t measured these are excluded from the calculations entirely.</description>
     </item>
     
     <item>
