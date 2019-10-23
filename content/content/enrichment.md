@@ -35,7 +35,7 @@ Note: Set the background gene list with  _Advanced Options_ > _Statistical Domai
 
 ### Enrichment in PANTHER
 
-Next try PANTHER :  https://david.ncifcrf.gov/
+Next try PANTHER :  http://www.pantherdb.org/
 
 Under _Select Analysis_ choose the _Statistical Overrepresentation test_ , with the 
 'GO Biological Process (BP) complete' annotation set. 
