@@ -3,6 +3,26 @@ title: Enrichment Statistics
 weight: 2
 ---
 
+
+Enrichment statistics are based on a contingency table like so:
+
+|        Gene        | ..in term | ..not in term | Total |
+|:------------------:|----------:|--------------:|------:|
+|     ..in gene list |        50 |           100 |   150 |
+| ..not in gene list (but in background) |       200 |         15900 | 16100 |
+|              Total |       250 |         16000 | 16250 |
+
+
+This is based on the 16250 genes that were measured in your experiment. 
+
+Note that there might be extra genes that weren't measured these are excluded from the calculations entirely. E.g. There might have been an extra 5000 terms (some of which might have been annotated with the term of interest), making for 21250 _annotated_ genes.
+
+
+
+---
+
+### Interactive Calculator
+
 [*Link to open toy enrichment calculator*](https://bioinformatics3.erc.monash.edu/rsconnect/connect/#/apps/40/access). 
 
 This calculates enrichment for a single hypothetical genelist (e.g. your RNAseq differentially expressed genelist) against a single hypothetical 'term' (some set of interesting genes, e.g. synaptic signaling genes). It makes a Venn diagram and a wordy description of what is being tested.
