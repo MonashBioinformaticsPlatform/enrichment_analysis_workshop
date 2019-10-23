@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title: Basics
 weight: 1
 ---
 
+Link to slides.
 
-Link to intro slides?
