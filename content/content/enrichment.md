@@ -5,16 +5,16 @@ weight: 7
 ---
 
 
-We're going to use the small 168-gene set for all these enrichment tools. If you don't have them already, they are available here:
+We're going to use the small 198-gene set for all these enrichment tools. If you don't have them already, they are available here:
 
 As gene symbols (CD2, DLG4 e.t.c).
 
-* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
+* [198-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
 * [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
 As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.  
 
-* [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_ensemblID.txt)
+* [198-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_ensemblID.txt)
 * [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_ensemblID.txt)
 
 ---
@@ -23,7 +23,7 @@ As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need
 
 Try gProfiler GOSt for functional enrichment: https://biit.cs.ut.ee/gprofiler/gost
 
-Use the 168 differentially expressed gene list. Check out the results, and keep them open for the next step. 
+Use the 198 differentially expressed gene list. Check out the results, and keep them open for the next step. 
 
 Note: Set the background gene list with  _Advanced Options_ > _Statistical Domain scope_ > _Custom over annotated Genes_ . This includes anything in your background that has any annotation. 
 
@@ -54,7 +54,7 @@ Once one test has been run, you can try out other annotation sets (or parameters
 
 Explore protein-protein interactions with STRING: https://string-db.org
 
-Paste the 168 differentially expressed genes into the 'Multiple proteins' option, and select human. You can accept gene mappings on the next screen with 'continue'.
+Paste the 198 differentially expressed genes into the 'Multiple proteins' option, and select human. You can accept gene mappings on the next screen with 'continue'.
 
  No background needed for this one, since we're not interested in calculating the enrichment.
 
@@ -67,7 +67,7 @@ Paste the 168 differentially expressed genes into the 'Multiple proteins' option
 
 Explore enrichment in the the pathway browser of reactome : https://reactome.org/
 
-Go to 'analyse data' and paste the 168 differentially expressed genes. No background.
+Go to 'analyse data' and paste the 198 differentially expressed genes. No background.
 
 Click through 'Syndecan Interactions', expand it one the left hand tree, then click one of the subpathways to zoom in on the pathway view. 
 
