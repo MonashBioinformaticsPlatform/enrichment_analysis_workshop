@@ -66,12 +66,10 @@
   
   <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.55.5" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="">
 
 
@@ -12,20 +12,20 @@
     <title>Defining the genelist :: Functional Analysis</title>
 
     
-    <link href="/enrichment_analysis_workshop/css/nucleus.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hybrid.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/theme.css?1571808221" rel="stylesheet">
-    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1571808221" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/nucleus.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/fontawesome-all.min.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hybrid.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/featherlight.min.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/perfect-scrollbar.min.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/auto-complete.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/atom-one-dark-reasonable.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/theme.css?1572143235" rel="stylesheet">
+    <link href="/enrichment_analysis_workshop/css/hugo-theme.css?1572143235" rel="stylesheet">
     
-      <link href="/enrichment_analysis_workshop/css/theme-green.css?1571808221" rel="stylesheet">
+      <link href="/enrichment_analysis_workshop/css/theme-green.css?1572143235" rel="stylesheet">
     
 
-    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1571808221"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery-3.3.1.min.js?1572143235"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -420,7 +420,8 @@
 <h5 id="activities">Activities</h5>
 
 <ol>
-<li><p>Download the full table of data from degust. Import into excel. <!-- File>Import --></p></li>
+<li><p>Download the full table of data from either degust, or the tsv file here:
+<a href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_table.tsv">Pezzini2016_SHSY5Ycelldiff_DE_table.tsv</a>. Import into excel. <!-- File>Import --></p></li>
 
 <li><p>How many genes are differentially expressed? In these results the FDR Column contains the corrected p-value, and the &lsquo;differentiated&rsquo; column shows the log2 fold-change of differentiated cells vs untreated cells (log2(diff)-log2(undiff)). 0 is unchanged.</p>
 
@@ -429,7 +430,7 @@
 
 <li><p>That&rsquo;s a particularly large number of genes - perhaps not unexpected given how much the cells are changed this experiment. How many significant genes also have 2-fold change in expression?</p></li>
 
-<li><p>For this workshop, get the genes with a FDR &lt;1x10^-7 and 2x fold change. Note that this is a ridiculous threshold - typically you would only filter at p&lt;0.01 (and occasionally 2-fold change) but the difference between the two cell conditions is pretty extreme! However, this arbitrary threshold gives a more typical number of differentially expressed genes for downstream analysis. An alternative approach could be to take the top 500 genes.</p></li>
+<li><p>For this workshop, get the genes with a FDR &lt;1x10^-4 and 2x fold change. Note that this is a ridiculous threshold - typically you would only filter at p&lt;0.01 (and occasionally 2-fold change) but the difference between the two cell conditions is pretty extreme! However, this arbitrary threshold gives a more typical number of differentially expressed genes for downstream analysis. An alternative approach could be to take the top 500 genes.</p></li>
 </ul>
 
 
@@ -444,7 +445,7 @@
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        There are 6391 differentially expressed genes, 2412 of which have a 2-fold change in expression. With the aggressive filtering - there are 168 genes left
+        There are 4923 differentially expressed genes, 2149 of which have a 2-fold change in expression. With the aggressive filtering - there are 198 genes left
     </div>
 </div></li>
 
@@ -735,19 +736,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1571808221"></script>
+    <script src="/enrichment_analysis_workshop/js/clipboard.min.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.min.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/perfect-scrollbar.jquery.min.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/jquery.sticky.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/featherlight.min.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/highlight.pack.js?1572143235"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/learn.js?1571808221"></script>
-    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1571808221"></script>
+    <script src="/enrichment_analysis_workshop/js/modernizr.custom-3.6.0.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/learn.js?1572143235"></script>
+    <script src="/enrichment_analysis_workshop/js/hugo-learn.js?1572143235"></script>
 
-    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1571808221" rel="stylesheet" />
-    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1571808221"></script>
+    <link href="/enrichment_analysis_workshop/mermaid/mermaid.css?1572143235" rel="stylesheet" />
+    <script src="/enrichment_analysis_workshop/mermaid/mermaid.js?1572143235"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
