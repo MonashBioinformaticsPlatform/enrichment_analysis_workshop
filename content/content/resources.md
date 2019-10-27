@@ -4,8 +4,12 @@ date: 2019-08-30
 weight: 8
 ---
 
-The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop. 
+Please find a link to today's presentation slides [here](https://tinyurl.com/enrichment-material)
 
+
+-----
+
+The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop. 
 
 <!-- https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/shsy5ydiff.png) 
 http://localhost:1313/enrichment_analysis_workshop/img/david.png
