@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Basics</title>
-      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/intro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/intro/</guid>
-      <description>Link to slides.</description>
-    </item>
-    
-    <item>
       <title>Enrichment Statistics</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/stats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -70,12 +61,11 @@ As gene symbols (CD2, DLG4 e.t.c).
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/resources/</guid>
-      <description>The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop.
+      <description>Please find a link to today&amp;rsquo;s presentation slides here
+The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop.
 Note that most of these tools do more than just enrichment tests, and some include their own databases.
 g:Profiler / g:GOSt https://biit.cs.ut.ee/gprofiler/gost
-The g:GOSt &amp;lsquo;functional profiling&amp;rsquo; tool of g:Profiler calculates It has a clean modern interface and a handy summary of which genes contribute to the enrichment.
-PANTHER http://www.pantherdb.org/
-PANTHER performs overrepresentation tests across multiple databases; Gene ontology, reactome, PANTHER pathways and protein classes.</description>
+The g:GOSt &amp;lsquo;functional profiling&amp;rsquo; tool of g:Profiler calculates It has a clean modern interface and a handy summary of which genes contribute to the enrichment.</description>
     </item>
     
     <item>
