@@ -37,7 +37,7 @@ You can adjust various factors and see their effect on the enrichment p-values.
 
 ##### Questions 
 
-If 20 of the 300 differentially expressed genes are annotated with the 500-gene term of interest.
+If 24 of the 300 differentially expressed genes are annotated with the 500-gene term of interest.
 
 1. Is it significant at p=0.05? {{%expand Show%}}No, corrected pval=0.087{{%/expand%}}
 

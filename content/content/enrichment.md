@@ -12,7 +12,7 @@ As gene symbols (CD2, DLG4 e.t.c).
 * [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
 * [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
-As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger geneslists; e.g. PANTHER or DAVID background or STRING without a specified organism.  
+As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.  
 
 * [168-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_ensemblID.txt)
 * [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_ensemblID.txt)
@@ -41,6 +41,8 @@ Under _Select Analysis_ choose the _Statistical Overrepresentation test_ , with 
 'GO Biological Process (BP) complete' annotation set. 
 
 PANTHER prompts for the background set after hitting next. Under _Upload List_ Browse for the text file (linked above) that contains background genes in *ensemblID* format.
+
+Once one test has been run, you can try out other annotation sets (or parameters) from the dropdown list on the results page - different GO sets, PANTHER pathways e.t.c
 
 
 ##### Question
