@@ -106,6 +106,12 @@ The desktop-based GSEA tool is (one of many) gene set enrichment approaches. It 
 
 ![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/gsea.png)
 
+
+### MetaboAnalyst
+MetaboAnalyst is popular among the metabolomics community for statistical, functional and integrative analysis of metabolomics data. It has a feature called **Functional enrichment analysis**, which performs metabolite set enrichment analysis, metabolic pathway analysis, and pathway activity prediction from MS peaks.
+
+![](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/metaboanalyst.png)
+
 ### Cytoscape
 
 https://cytoscape.org/
