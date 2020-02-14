@@ -12,10 +12,15 @@ As gene symbols (CD2, DLG4 e.t.c).
 * [198-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_genenames.txt)
 * [Background list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_genenames.txt)
 
-As ensemble gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.  
+As ensembl gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.  
 
 * [198-gene differentially expressed gene list](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_genelist_as_ensemblID.txt)
 * [Background list ](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_bg_genelist_as_ensemblID.txt)
+
+
+Or, some (but not all) tools will let you copy-paste in your genes from an excel spreadsheet (below). Other tools still require you to upload a text file.
+
+* [Pezzini2016_SHSY5Ycelldiff_DE_table_filtering.xlsx](https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/data/Pezzini2016_SHSY5Ycelldiff_DE_table_filtering.xlsx)
 
 ---
 
