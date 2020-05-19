@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 date: 2019-08-30
-weight: 8
+weight: 9
 ---
 
 Please find a link to today's presentation slides [here](https://tinyurl.com/enrichment-material)

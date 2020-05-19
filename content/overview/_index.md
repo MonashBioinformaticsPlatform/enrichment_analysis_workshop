@@ -22,24 +22,33 @@ Participants will gain practical experience and skills to be able to:
 - Follow workflow after the workshop to conduct their own analysis.
 
 ### Target Audience
+
 This workshop is intended for biologists working with ‘-Omics data’ (e.g. RNA-Seq, protein expression and other omics data), who are interested in interpreting large gene/protein lists resulting from their experiments.
 
 ### Setup Requirements
-Bring your own laptop with active internet connection. No software installation required as the course will be taught online. Tools and material will be provided on the day.
+
+This workshop will be delivered online over zoom and slack; you may wish to install the zoom and slack applications (although browser based access is possible). Otherwise, no special software installation will required, as we will be using online analysis tools.  
+
+ * Zoom Link:  TBA
+ * Slack Channel: 
+    - Workspace: _monashbioinformatics.slack.com_  
+    - Channel: _omicsfunc26may2020_
+
+
+Links and material will be provided on the day. BYO coffee.
+
 
 ### Schedule
+
 Time	|	Programme
 -----------	| ------------------:
-9:45	|	Welcome
-10:00	|	Session 1
+10:00	|	Welcome & Session 1
 12:00	|	Break
 13:00	|	Session 2
-14:45	|	Wrap-up
-
-### Shared Notepad
-- [Click here](https://biotraining.erc.monash.edu/etherpad/p/functional_analysis_workshop) to go to the shared notepad.
+14:00	|	Wrap-up
 
 
 ### Post-workshop survey
-We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey ([https://tinyurl.com/FAOD-Oct-19](https://tinyurl.com/FAOD-Oct-19)) in the last 5 mins.
+
+We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey [Feedback Survey](https://docs.google.com/forms/d/1RMPMdnoAukAQEEGbrchguHcxDeuXFB8J9sF18uOSuiI) in the last 5 mins.
 
