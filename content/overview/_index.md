@@ -27,7 +27,7 @@ This workshop is intended for biologists working with ‘-Omics data’ (e.g. RN
 
 ### Setup Requirements
 
-This workshop will be delivered online over zoom and slack; you may wish to install the zoom and slack applications (although browser based access is possible). Otherwise, no special software installation will required, as we will be using online analysis tools.  
+This workshop will be delivered online over zoom and slack; you may wish to install the dedicated zoom and slack applications. Otherwise, no special software installation will required, as we will be using online analysis tools.  
 
  * Zoom Link:  TBA
  * Slack Channel: 
