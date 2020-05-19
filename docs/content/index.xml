@@ -6,7 +6,7 @@
     <description>Recent content in Workshop material on Functional Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/index.xml" rel="self" type="application/rss+xml" />
     
@@ -53,6 +53,18 @@ Activities Todays exercise follows the process of getting the differentially exp
       <description>We&amp;rsquo;re going to use the small 198-gene set for all these enrichment tools. If you don&amp;rsquo;t have them already, they are available here:
 As gene symbols (CD2, DLG4 e.t.c).
  198-gene differentially expressed gene list Background list  As ensembl gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.</description>
+    </item>
+    
+    <item>
+      <title>Reporting results</title>
+      <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/reporting/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/reporting/</guid>
+      <description>Once we have done an enrichment analysis - how to communicate the results? Like everything - it depends what you need to say. Some examples are below.
+In text If you just need to emphasise that the differential expression relates to a condition of interest, you don&amp;rsquo;t need much:
+ Genes differentially expressed after differentiation were enriched for GO term &amp;ldquo;regulation of neurogenesis&amp;rdquo;, adjusted pval &amp;lt; 0.01).
+ And in the methods:</description>
     </item>
     
     <item>

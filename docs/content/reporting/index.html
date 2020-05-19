@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/enrichment_analysis_workshop/images/favicon.png" type="image/png">
 
-    <title>Functional Analysis of -Omics Data :: Functional Analysis</title>
+    <title>Reporting results :: Functional Analysis</title>
 
     
     <link href="/enrichment_analysis_workshop/css/nucleus.css?1589872219" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/enrichment_analysis_workshop/">
+  <body class="" data-url="/enrichment_analysis_workshop/content/reporting/">
     <nav id="sidebar" class="">
 
 
@@ -82,7 +82,7 @@
   
     
     <li data-nav-id="/enrichment_analysis_workshop/content/" title="Workshop material" class="dd-item 
-        
+        parent
         
         
         ">
@@ -182,7 +182,7 @@
  
   
     
-      <li data-nav-id="/enrichment_analysis_workshop/content/reporting/" title="Reporting results" class="dd-item ">
+      <li data-nav-id="/enrichment_analysis_workshop/content/reporting/" title="Reporting results" class="dd-item active">
         <a href="/enrichment_analysis_workshop/content/reporting/">
         Reporting results
         
@@ -332,100 +332,221 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/enrichment_analysis_workshop/'>Functional Analysis of -Omics Data</a> > <a href='/enrichment_analysis_workshop/content/'>Workshop material</a> > Reporting results
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#in-text">In text</a></li>
+<li><a href="#as-a-table">As a table</a></li>
+<li><a href="#as-a-figure">As a figure</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Reporting results
+            </h1>
           
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
-
- 
-
-
-<h1 id="functional-analysis-of-omics-data">Functional Analysis of Omics Data</h1>
-
-<p>Welcome.</p>
 
 
 
+<p>Once we have done an enrichment analysis - how to communicate the results? Like everything - it depends what you need to say. Some examples are below.</p>
+
+<h3 id="in-text">In text</h3>
+
+<p>If you just need to emphasise that the differential expression relates to a condition of interest, you don&rsquo;t need much:</p>
+
+<blockquote>
+<p>Genes differentially expressed after differentiation were enriched for GO term &ldquo;regulation of neurogenesis&rdquo;, adjusted pval &lt; 0.01).</p>
+</blockquote>
+
+<p>And in the methods:</p>
+
+<blockquote>
+<p>Enrichment calculated for differentially expressed genes with the g:GOSt enrichment tool <a href="https://academic.oup.com/nar/article/47/W1/W191/5486750">(Raudvere et al, 2019)</a> using a background of tested genes.</p>
+</blockquote>
+
+<h3 id="as-a-table">As a table</h3>
+
+<p>For a more complete view, a table of the significant or top <em>n</em> terms can be useful. E.g In a supplementary figure</p>
+
+<p>The top 10 enriched GO terms for the differentially expressed genes;</p>
+
+<table>
+<thead>
+<tr>
+<th>GO:BP Term</th>
+<th>Term ID</th>
+<th align="right">Adjusted p-value</th>
+<th align="right">Term Size</th>
+<th align="right">Num DE Genes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>system process</td>
+<td>GO:0003008</td>
+<td align="right">2.90E-04</td>
+<td align="right">1243</td>
+<td align="right">45</td>
+</tr>
+
+<tr>
+<td>nervous system development</td>
+<td>GO:0007399</td>
+<td align="right">4.19E-04</td>
+<td align="right">1985</td>
+<td align="right">60</td>
+</tr>
+
+<tr>
+<td>regulation of cell development</td>
+<td>GO:0060284</td>
+<td align="right">1.98E-03</td>
+<td align="right">795</td>
+<td align="right">33</td>
+</tr>
+
+<tr>
+<td>central nervous system development</td>
+<td>GO:0007417</td>
+<td align="right">2.67E-03</td>
+<td align="right">805</td>
+<td align="right">33</td>
+</tr>
+
+<tr>
+<td>regulation of neurogenesis</td>
+<td>GO:0050767</td>
+<td align="right">5.59E-03</td>
+<td align="right">707</td>
+<td align="right">30</td>
+</tr>
+
+<tr>
+<td>regulation of nervous system development</td>
+<td>GO:0051960</td>
+<td align="right">5.78E-03</td>
+<td align="right">790</td>
+<td align="right">32</td>
+</tr>
+
+<tr>
+<td>regulation of cell differentiation</td>
+<td>GO:0045595</td>
+<td align="right">6.03E-03</td>
+<td align="right">1471</td>
+<td align="right">47</td>
+</tr>
+
+<tr>
+<td>multicellular organismal process</td>
+<td>GO:0032501</td>
+<td align="right">2.04E-02</td>
+<td align="right">5300</td>
+<td align="right">111</td>
+</tr>
+
+<tr>
+<td>system development</td>
+<td>GO:0048731</td>
+<td align="right">2.88E-02</td>
+<td align="right">3668</td>
+<td align="right">85</td>
+</tr>
+
+<tr>
+<td>neurogenesis</td>
+<td>GO:0022008</td>
+<td align="right">4.36E-02</td>
+<td align="right">1375</td>
+<td align="right">43</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="as-a-figure">As a figure</h3>
+
+<p>Plots of -log p-value are a popular option for a figure. By taking the exponent of the p-value bigger bars indicate more significance.</p>
+
+<p>For instance, this figure is taken from the <a href="https://link.springer.com/article/10.1007%2Fs10571-016-0403-y">(Pezzini et al. 2017)</a> paper.
+Note that in this figure shows 2 specifics categories from the IPA (ingenuity) database using the IPA tool (not covered here), so the terms themselves differ.</p>
+
+<p><img src="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/img/NegLogPvalPlot_Pezzini2017.png" alt="" /></p>
+
+<p>You can also build on such a plot with number of genes and the like. For an example, see the &lsquo;bubble&rsquo; chart produced by a package called pathfindR here: <a href="https://www.biostars.org/p/322415/">https://www.biostars.org/p/322415/</a></p>
+
+<hr />
+
+<p>There are also tools like cluego (a cytoscape plugin) that build enriched terms into a network : <a href="http://apps.cytoscape.org/apps/cluego">http://apps.cytoscape.org/apps/cluego</a></p>
 
 
-
-
-
-<ul class="children children-li">
+<footer class=" footline" >
 	
-
-	
-		
-		
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-<li>
-<a href="/enrichment_analysis_workshop/overview/" >Overview</a>
-</li>
-				
-
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/enrichment_analysis_workshop/content/" >Workshop material</a>
-</li>
-				
-
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/enrichment_analysis_workshop/supplementary/" >Supplementary</a>
-</li>
-				
-
-				
-			
-			
-		
-	
-
-	
-</ul>
+</footer>
 
 
-
-
-	
-  
-        
-            </div> 
         
         </div> 
         
@@ -476,6 +597,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -488,6 +610,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -553,6 +678,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -568,6 +694,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -656,8 +785,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/enrichment_analysis_workshop/content/enrichment/" title="Enrichment Tools"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/enrichment_analysis_workshop/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/enrichment_analysis_workshop/content/resources/" title="Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
