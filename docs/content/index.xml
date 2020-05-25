@@ -63,8 +63,7 @@ As gene symbols (CD2, DLG4 e.t.c).
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/reporting/</guid>
       <description>Once we have done an enrichment analysis - how to communicate the results? Like everything - it depends what you need to say. Some examples are below.
 In text If you just need to emphasise that the differential expression relates to a condition of interest, you don&amp;rsquo;t need much:
- Genes differentially expressed after differentiation were enriched for GO term &amp;ldquo;regulation of neurogenesis&amp;rdquo;, adjusted pval &amp;lt; 0.01).
- And in the methods:</description>
+ Genes differentially expressed after SH-SY5Y cell differentiation were enriched for GO term &amp;ldquo;regulation of neurogenesis&amp;rdquo;, adjusted pval &amp;lt; 0.01).</description>
     </item>
     
     <item>
