@@ -29,7 +29,7 @@ This workshop is intended for biologists working with ‘-Omics data’ (e.g. RN
 
 This workshop will be delivered online over zoom and slack; you may wish to install the dedicated zoom and slack applications. Otherwise, no special software installation will required, as we will be using online analysis tools.  
 
- * Zoom Link:  TBA
+ * Zoom Link: https://monash.zoom.us/j/99205280779
  * Slack Channel: 
     - Workspace: _monashbioinformatics.slack.com_  
     - Channel: _omicsfunc26may2020_
