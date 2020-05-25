@@ -11,7 +11,7 @@ Once we have done an enrichment analysis - how to communicate the results? Like 
 
 If you just need to emphasise that the differential expression relates to a condition of interest, you don't need much:
 
-> Genes differentially expressed after differentiation were enriched for GO term "regulation of neurogenesis", adjusted pval < 0.01).
+> Genes differentially expressed after SH-SY5Y cell differentiation were enriched for GO term "regulation of neurogenesis", adjusted pval < 0.01).
 
 And in the methods:
 
