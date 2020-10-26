@@ -29,10 +29,10 @@ This workshop is intended for biologists working with ‘-Omics data’ (e.g. RN
 
 This workshop will be delivered online over zoom and slack; you may wish to install the dedicated zoom and slack applications. Otherwise, no special software installation will required, as we will be using online analysis tools.  
 
- * Zoom Link: https://monash.zoom.us/j/99205280779
+ * Zoom Link: https://monash.zoom.us/j/86178075773?pwd=NGk5WFlsa3JHaDFjemRqOEwxWk5udz09
  * Slack Channel: 
     - Workspace: _monashbioinformatics.slack.com_  
-    - Channel: _omicsfunc26may2020_
+    - Channel: _omicsfunc27oct2020_
 
 
 Links and material will be provided on the day. BYO coffee.
@@ -50,5 +50,5 @@ Time	|	Programme
 
 ### Post-workshop survey
 
-We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey [Feedback Survey](https://docs.google.com/forms/d/1RMPMdnoAukAQEEGbrchguHcxDeuXFB8J9sF18uOSuiI) in the last 5 mins.
+We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey [Feedback Survey](https://forms.gle/FfqPyAV4kDxdhACJ8) in the last 5 mins.
 
