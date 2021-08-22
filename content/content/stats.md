@@ -23,7 +23,7 @@ Note that there might be extra genes that weren't measured these are excluded fr
 
 ### Interactive Calculator
 
-[*Link to open toy enrichment calculator*](https://bioinformatics3.erc.monash.edu/rsconnect/connect/#/apps/40/access). 
+[*Link to open toy enrichment calculator*](https://bioinformatics3.erc.monash.edu/rsconnect/content/241/). 
 
 This calculates enrichment for a single hypothetical genelist (e.g. your RNAseq differentially expressed genelist) against a single hypothetical 'term' (some set of interesting genes, e.g. synaptic signaling genes). It makes a Venn diagram and a wordy description of what is being tested.
 
