@@ -39,10 +39,10 @@ Links and material will be provided on the day. BYO coffee.
 
 Time	|	Programme
 -----------	| ------------------:
-13:00	|	Welcome & Session 1
-14:30	|	Break
-14:40	|	Session 2
-16:00	|	Wrap-up
+10:00	|	Welcome & Session 1
+11:30	|	Break
+11:40	|	Session 2
+13:00	|	Wrap-up
 
 
 ### Post-workshop survey
