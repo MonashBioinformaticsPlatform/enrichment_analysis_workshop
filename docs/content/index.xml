@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workshop material on Functional Analysis</title>
@@ -7,98 +7,62 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enrichment Statistics</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/stats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/stats/</guid>
-      <description>Enrichment statistics are based on a contingency table like so:
-   Gene ..in term ..not in term Total     ..in gene list 50 100 150   ..not in gene list (but in background) 200 15900 16100   Total 250 16000 16250    This is based on the 16250 genes that were measured in your experiment.
-Note that there might be extra genes that weren&amp;rsquo;t measured these are excluded from the calculations entirely.</description>
+      <description>Enrichment statistics are based on a contingency table like so:&#xA;Gene ..in term ..not in term Total ..in gene list 50 100 150 ..not in gene list (but in background) 200 15900 16100 Total 250 16000 16250 This is based on the 16250 genes that were measured in your experiment.&#xA;Note that there might be extra genes that weren&amp;rsquo;t measured these are excluded from the calculations entirely. E.g. There might have been an extra 5000 terms (some of which might have been annotated with the term of interest), making for 21250 annotated genes.</description>
     </item>
-    
     <item>
       <title>Example Analysis</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/example-dataset/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/example-dataset/</guid>
-      <description>SH-SY5Y Differentiation SH-SY5Y is a commonly used neuroblastoma cell line. With appropriate treatment, it can be induced to differentiate into a ‘more neuronal’ form. Differentiated cells look quite different, growing thin neurites out from the body of the cell.
-Image is derived from Figure 4 (Pezzini et al. 2017)
-The question: What pathways are involved in SH-SY5Y Differentiation? In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>
+      <description>SH-SY5Y Differentiation SH-SY5Y is a commonly used neuroblastoma cell line. With appropriate treatment, it can be induced to differentiate into a ‘more neuronal’ form. Differentiated cells look quite different, growing thin neurites out from the body of the cell.&#xA;Image is derived from Figure 4 (Pezzini et al. 2017)&#xA;The question: What pathways are involved in SH-SY5Y Differentiation? In their paper Transcriptomic Profiling Discloses Molecular and Cellular Events Related to Neuronal Differentiation in SH-SY5Y Neuroblastoma Cells Pezzini et al induced differentiation of the SH-SY5Y Neuroblastoma cell line and measured transcriptomic changes via RNAseq (Pezzini et al.</description>
     </item>
-    
     <item>
       <title>Defining the genelist</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/genelists/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/genelists/</guid>
-      <description>Starting from those differential expression results here, how do we go about getting a genelist to calculate enrichment on?
-Activities Todays exercise follows the process of getting the differentially expressed gene list using excel. You could use another spreadsheet program, or some may prefer a programming language like R .
- Download the full table of data from either degust, or the csv file here: Pezzini2016_SHSY5Ycelldiff_DE_table.csv. Import into excel. Import --</description>
+      <description>Starting from those differential expression results here, how do we go about getting a genelist to calculate enrichment on?&#xA;Activities Todays exercise follows the process of getting the differentially expressed gene list using excel. You could use another spreadsheet program, or some may prefer a programming language like R .&#xA;Download the full table of data from either degust, or the csv file here: Pezzini2016_SHSY5Ycelldiff_DE_table.csv. Import into excel. How many genes are differentially expressed?</description>
     </item>
-    
     <item>
       <title>Enrichment Tools</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/enrichment/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/enrichment/</guid>
-      <description>We&amp;rsquo;re going to use the small 198-gene set for all these enrichment tools. If you don&amp;rsquo;t have them already, they are available here:
-As gene symbols (CD2, DLG4 e.t.c).
- 198-gene differentially expressed gene list Background list  As ensembl gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.</description>
+      <description>We&amp;rsquo;re going to use the small 198-gene set for all these enrichment tools. If you don&amp;rsquo;t have them already, they are available here:&#xA;As gene symbols (CD2, DLG4 e.t.c).&#xA;198-gene differentially expressed gene list Background list As ensembl gene ids (e.g. ENSG00000183654). Harder to read, but some tools need unambiguous IDs like this for performance reasons when working with larger genelists; e.g. DAVID background or STRING without a specified organism.</description>
     </item>
-    
     <item>
       <title>Reporting results</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/reporting/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/reporting/</guid>
-      <description>Once we have done an enrichment analysis - how to communicate the results? Like everything - it depends what you need to say. Some examples are below.
-In text If you just need to emphasise that the differential expression relates to a condition of interest, you don&amp;rsquo;t need much:
- Genes differentially expressed after SH-SY5Y cell differentiation were enriched for GO term &amp;ldquo;regulation of neurogenesis&amp;rdquo;, adjusted pval &amp;lt; 0.01).</description>
+      <description>Once we have done an enrichment analysis - how to communicate the results? Like everything - it depends what you need to say. Some examples are below.&#xA;In text If you just need to emphasise that the differential expression relates to a condition of interest, you don&amp;rsquo;t need much:&#xA;Genes differentially expressed after SH-SY5Y cell differentiation were enriched for GO term &amp;ldquo;regulation of neurogenesis&amp;rdquo;, adjusted pval &amp;lt; 0.01).&#xA;And in the methods:</description>
     </item>
-    
     <item>
       <title>Resources</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/resources/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/resources/</guid>
-      <description>Please find a link to today&amp;rsquo;s presentation slides here
-The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop.
-Note that most of these tools do more than just enrichment tests, and some include their own databases.
-g:Profiler / g:GOSt https://biit.cs.ut.ee/gprofiler/gost
-The g:GOSt &amp;lsquo;functional profiling&amp;rsquo; tool of g:Profiler calculates It has a clean modern interface and a handy summary of which genes contribute to the enrichment.</description>
+      <description>Please find a link to today&amp;rsquo;s presentation slides here&#xA;The following tools might be useful for downstream functional analysis; this includes some not covered in todays workshop.&#xA;Note that most of these tools do more than just enrichment tests, and some include their own databases.&#xA;g:Profiler / g:GOSt https://biit.cs.ut.ee/gprofiler/gost&#xA;The g:GOSt &amp;lsquo;functional profiling&amp;rsquo; tool of g:Profiler calculates It has a clean modern interface and a handy summary of which genes contribute to the enrichment.</description>
     </item>
-    
     <item>
       <title>End of Session Challenge</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/challenge/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/challenge/</guid>
-      <description>Dr Dodge&amp;rsquo;s Experiment There&amp;rsquo;s quite a few ways you can calculate functional enrichment - so there&amp;rsquo;s always a risk of p-hacking, whether accidental or deliberate.
-So lets go deliberate&amp;hellip;
-Dr Dodge is convinced that your experiment should turn out with relevance to GO term &amp;lsquo;segmentation&amp;rsquo; - but p=0.06! But they must be significant, the paper needs be submitted by Friday!
-What hacky and statistically questionable approaches could you apply to call these results &amp;ldquo;significant&amp;rdquo;?</description>
+      <description>Dr Dodge&amp;rsquo;s Experiment There&amp;rsquo;s quite a few ways you can calculate functional enrichment - so there&amp;rsquo;s always a risk of p-hacking, whether accidental or deliberate.&#xA;So lets go deliberate&amp;hellip;&#xA;Dr Dodge is convinced that your experiment should turn out with relevance to GO term &amp;lsquo;segmentation&amp;rsquo; - but p=0.06! But they must be significant, the paper needs be submitted by Friday!&#xA;What hacky and statistically questionable approaches could you apply to call these results &amp;ldquo;significant&amp;rdquo;?</description>
     </item>
-    
     <item>
       <title>Feedback</title>
       <link>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/end/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://monashbioinformaticsplatform.github.io/enrichment_analysis_workshop/content/end/</guid>
       <description>We appreciate your feedback (both positive and negative !) - please fill out the short post-workshop survey Feedback Survey</description>
     </item>
-    
   </channel>
 </rss>
